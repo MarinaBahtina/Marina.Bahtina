@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фитнес-клуб</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="header__title">Фитнес-клуб</h1>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
        <img class="header__logo" src="images/logotip.avif" alt="логотип" width="100">
+       <h1 class="header__title" >Фитнес-клуб</h1>
+    </a>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item">
@@ -50,40 +53,43 @@
             <input type="submit" value="Зарегистрироваться">
         </form>
     </header>
-    <main class="main">
+    <main class="main container">
         <section class="about">
             <h2 class="about__title">Главная</h2>
             <img class="about_image" src="images/fondluastran.avif" alt="фотография фона" width="1500">
         </section>
-        <section>
-            <button>Запись на пробное занятие</button>
-            <form action=" method" >
-
-                <input type="text" name="username" placeholder="Введите ФИО">
-                <input type="tel" name="tel" placeholder="Контактный телефон">
-                <input type="number" name="number" placeholder="Возраст">
-                <input type="text" name="time" placeholder="Удобное время для вас" >
-                <input type="submit" value="Отправить">
-            </form>
-        </section>
-        <section>
-            <div class = "about" >
+        
+        <section class="about">
+            <div class = "about__wrap-left" >
                 <h2 class="about__title">Информация о клубе</h2>    
+              <p> Мы понимаем, как сложно выбрать фитнес-клуб для тренировок. Именно поэтому предлагаем всем желающим абсолютно бесплатное первое занятие. Вы сможете ознакомиться с нашими залами, познакомиться с инструкторами и сделать правильный выбор.</p>
+              <section>
+                <button>Запись на пробное занятие</button>
+                <form action=" method" >
+    
+                    <input type="text" name="username" placeholder="Введите ФИО">
+                    <input type="tel" name="tel" placeholder="Контактный телефон">
+                    <input type="number" name="number" placeholder="Возраст">
+                    <input type="text" name="time" placeholder="Удобное время для вас" >
+                    <input type="submit" value="Отправить">
+                </form>
+            </section>
+            </div>
+            <div class="about__wrap-right">
                 <img class="about_image" src="images/oclube.jpg" alt="фотография о клубе"  width="300"> 
-                <p> Мы понимаем, как сложно выбрать фитнес-клуб для тренировок. Именно поэтому предлагаем всем желающим абсолютно бесплатное первое занятие. Вы сможете ознакомиться с нашими залами, познакомиться с инструкторами и сделать правильный выбор.</p>
             </div>
         </section>
         <section class="trainers"> 
             <div class="trainers__cards">
-                <img class="trainers__image" src="images/t-1.jpg" alt="" width="300">
+                <img class="trainers__image" src="images/t-1.jpg" alt="фото тренера" width="300">
                 <p class="trainers__name">Петров Андрей Сергеевич</p>
             </div>
             <div class="trainers__cards">
-                <img class="trainers__image" src="images/t-2.jpg" alt="" width="300">
+                <img class="trainers__image" src="images/t-2.jpg" alt="фото тренераа" width="300">
                 <p class="trainers__name">Сидоров Павел Николаевич</p>
             </div>
             <div class="trainers__cards">
-                <img class="trainers__image" src="images/t-3.jpg" alt="" width="300">
+                <img class="trainers__image" src="images/t-3.jpg" alt="фотография тренера" width="300">
             <p class="trainers__name">Домрачева Анна Владимировна</p> 
             </div>
         </section>
@@ -131,18 +137,18 @@
         </section>
         
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <p>Бахтина Марина ФО-41</p>
         <ul>
-            <img class="header__logo" src="images/logotip.avif" alt="" width="100">
+            <img class="header__logo" src="images/logotip.avif" alt="логотип" width="100">
             <li><a href="#">Контакты и адрес</a></li>
             <p>Номер телефона</p>
             <p>Электронная почта</p>
             <p>Адрес</p>
             <li><a href="#">Соц. сети</a></li>
-            <img src="images/wattsap.png" alt="" width="50">
-            <img src="images/telega.png" alt="" width="50">
-            <img src="images/vk-ts1623650785.png" alt="" width="50">
+            <img src="images/wattsap.png" alt="фото ватцап" width="50">
+            <img src="images/telega.png" alt="фото телеграмм" width="50">
+            <img src="images/vk-ts1623650785.png" alt="фото вк" width="50">
             <li><a href="#">Меню</a></li>
             <li><a href="#">О клубе</a></li>
             <li><a href="#">График работы</a></li>
