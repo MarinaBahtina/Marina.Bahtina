@@ -8,7 +8,7 @@
    }
    
    .about{
-    background-color: rgb(62, 120, 167);
+    background-color: rgba(197, 101, 235, 0.651);
      color: rgb(255, 255, 255);
      padding: 10px;
     }
@@ -16,7 +16,7 @@
     .about__button{
         display: block;
         padding: 10px;
-        color: rgb(62, 120, 167);
+        color: rgb(71, 167, 62);
         background-color: rgb(255, 255, 255);
         text-decoration: none;
         margin-top: auto;
@@ -27,12 +27,24 @@
         flex-direction: column;
        }
 
-       .trainers__card{
+       .trainers__cards{
         width: 350px;
         padding: 15px;
-        background-color: aliceblue;
-       color: black;
+        background-color: rgba(102, 49, 109, 0.74);
+        color: black;
+        font-style: oblique;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
+
+
+       }
+       .trainers_wrapper{
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style-type: none;
+        
        }
        .trainers__name{
         margin-top: 15px;
@@ -54,7 +66,7 @@
        .trainers__link{
         display: block;
         padding: 10px;
-        background-color: rgb(62, 120, 167);
+        background-color: rgb(9, 122, 37);
         color: rgb(255, 255, 255);
         text-decoration: none;
         text-align: center;
@@ -67,3 +79,18 @@
         flex-wrap: wrap;
         list-style-type: none;
        }              
+       .about__title {
+        color: rgb(59, 11, 63);
+        font-style: italic;
+       }
+
+       .about__title__desc
+       {
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+       }
+       .trainers__image{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+       }
