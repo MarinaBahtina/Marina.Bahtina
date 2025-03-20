@@ -1,6 +1,11 @@
-.heager{
-background-color: black;
-color: white;
+.header {
+    background-image: url('../images/fon.webp');
+    background-repeat: no-repeat;
+    background-size: 1440px 300px;
+
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
@@ -9,28 +14,45 @@ color: white;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-   }
+}
 
-   .menu__link{
-    display: block;
-    padding: 10px;
+.menu__link {
+    display:block;
+    padding: 5px 10px;
     margin: 5px;
-    background-color: rgb(62, 120, 167);
+    background-color:  rgba(96, 13, 129, 0.651);
     color: rgb(255, 255, 255);
     text-decoration: none;
-   }
-   
-   .header__logo-wrap{
+    
+    
+
+}
+
+
+
+.header__logo-wrap {
+    text-decoration: none; 
+    color: rgba(96, 13, 129, 0.651);
     display: flex;
     align-items: center;
     gap: 10px;
-   }
+}
 
-   .header__logo-wrap{
-    text-decoration: none;
-    color: rgb(0, 80, 121);
-   }
-   .header__title{
+.header__title {
     margin: 0;
-   }
+}
 
+.menu__item {
+    font-style: oblique;
+}
+.header__buttons{
+    display: flex;
+    gap: 10px;
+}
+.header__button{
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: rgba(96, 13, 129, 0.651);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
