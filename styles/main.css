@@ -34,16 +34,18 @@
         color: black;
         font-style: oblique;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
+        
 
 
        }
-       .trainers_wrapper{
+       .trainers{
         margin: 0;
         padding: 20px 0;
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
         list-style-type: none;
+       
         
        }
        .trainers__name{
@@ -100,3 +102,15 @@
         border-radius: 20px;
         background-color: rgba(102, 49, 109, 0.74); ;
        }
+
+       .main__button{
+        padding: 5px 10px;
+        font-size: 20px;
+        background-color: rgba(96, 13, 129, 0.651);
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        text-align:center;
+       }
+      .trainers__title{
+text-align: center;
+      }    

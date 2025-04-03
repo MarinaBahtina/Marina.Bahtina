@@ -1,5 +1,9 @@
-.footer__list{
+.footer{
     list-style: none;
     display: flex;
     gap: 20px;
+}
+.footer__list{
+    list-style: none;
+    
 }
