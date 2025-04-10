@@ -8,7 +8,7 @@
    }
    
    .about{
-    background-color: rgba(197, 101, 235, 0.651);
+    background-color: rgba(95, 116, 238, 0.719);
      color: rgb(255, 255, 255);
      padding: 10px;
     }
@@ -30,7 +30,7 @@
        .trainers__cards{
         width: 350px;
         padding: 15px;
-        background-color: rgba(102, 49, 109, 0.74);
+        background-color: rgba(49, 50, 109, 0.74);
         color: black;
         font-style: oblique;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
@@ -38,10 +38,11 @@
 
 
        }
-       .trainers{
+       .treiners__wrap{
         margin: 0;
         padding: 20px 0;
         display: flex;
+        justify-content: space-evenly;
         gap: 20px;
         flex-wrap: wrap;
         list-style-type: none;
@@ -80,9 +81,12 @@
         gap: 20px;
         flex-wrap: wrap;
         list-style-type: none;
-       }              
+       }    
+       .trainers__cards:hover{
+        transform: scale(1.07);
+       }          
        .about__title {
-        color: rgb(59, 11, 63);
+        color: rgb(11, 14, 63);
         font-style: italic;
        }
 
@@ -100,13 +104,13 @@
         color:rgb(255, 255, 255);
         font-style: initial;
         border-radius: 20px;
-        background-color: rgba(102, 49, 109, 0.74); ;
+        background-color: rgba(49, 55, 109, 0.74); 
        }
 
        .main__button{
         padding: 5px 10px;
         font-size: 20px;
-        background-color: rgba(96, 13, 129, 0.651);
+        background-color: rgba(21, 13, 129, 0.651);
         color: rgb(255, 255, 255);
         border-radius: 20px;
         text-align:center;
@@ -114,3 +118,38 @@
       .trainers__title{
 text-align: center;
       }    
+      .table__link{
+        text-decoration: none;
+        background-color: #bbb5b5;
+        border-radius: 10px;
+        color: #000;
+        padding: 5px 10px;
+      }
+      .table__link:hover{
+        text-decoration: underline;
+      }
+      .table, .table__row, .table__col{
+        border: 1px solid #000;
+      }
+      .login{
+        width: 800px;
+        background-color: rgba(161, 169, 238, 0.74); 
+        border: 1px solid #000;
+      }
+      .login__input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+      }
+      .register{
+        width: 800px;
+        background-color: rgba(161, 169, 238, 0.74); 
+        border: 1px solid #000;
+      }
+      .register__input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+      }

@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+    .treiners__wrap{
+        padding: 10px 40px;
+    }
+    .trainers__cards{
+        width: 500px;
+    }
+    .about_image{
+        margin: 0 auto;
+    }
+}

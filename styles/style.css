@@ -9,3 +9,4 @@
 /* Подключение стилей относящихся к main */
 @import "main.css";
 
+@import "media.css"

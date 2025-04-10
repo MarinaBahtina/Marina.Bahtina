@@ -1,9 +1,18 @@
 .footer{
+    margin-top: 20px;
     list-style: none;
     display: flex;
     gap: 20px;
+    background-color: rgba(21, 13, 129, 0.651);
 }
 .footer__list{
     list-style: none;
+    color:black;
+
     
+} 
+.footer__link{
+    text-decoration: none;
+    color: #000;
 }
+
