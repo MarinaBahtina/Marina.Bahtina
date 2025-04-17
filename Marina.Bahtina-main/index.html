@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фитнес-клуб</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -12,6 +13,7 @@
        <img class="header__logo" src="images/logotip.avif" alt="логотип" width="100" height="90">
        <h1 class="header__title" >Фитнес-клуб</h1>
     </a>
+         
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item">
@@ -29,59 +31,37 @@
                 <li class="menu__item">
                     <a class="menu__link" href="#">О клубе</a>
                 </li>
-                <li>
+                <li class="menu__item">
                     <a class="menu__link" href="#">Оставить отзыв</a> 
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="biblioteka.html">Библиотека упражнений</a>
                 </li>
+               
             </ul>
         </nav>
-        <button>Вход</button>
-        <form id ="input_form" action="#">
-           <input type="text" name="login" placeholder="Логин">
-           <input type="password" name="password" placeholder="Пароль">
-           <input type="password" name="password" placeholder="Подтвердить вход">
-           <input type="submit" value="Войти">
-        </form>
-        <button>Регистрация</button>
-        <form action="#">
-            <input type="text" name="username" placeholder="Введите ФИО">
-            <input type="number" name="number" placeholder="Дата рождения">
-            <input type="text" name=" " placeholder="Электронная почта">
-            <input type="tel" name="tel" placeholder="Контактный телефон">
-            <input type="submit" value="Зарегистрироваться">
-        </form>
+        <div class="header__buttons">
+            <button class="header__button">Вход</button>
+            <button class="header__button">Регистрация</button>
+        </div>
     </header>
     <main class="main container">
-        <section class="about">
-            <h2 class="about__title"></h2>
-            <!-- <img class="about_image" src="images/fondluastran.avif" alt="фотография фона" width="1500"> -->
-        </section>
-        
         <section class="about">
             <div class = "about__wrap-left" >
                 <h2 class="about__title">Информация о клубе</h2>    
               <p class = "about__title__desc"> Мы понимаем, как сложно выбрать фитнес-клуб для тренировок. Именно поэтому предлагаем всем желающим абсолютно бесплатное первое занятие. Вы сможете ознакомиться с нашими залами, познакомиться с инструкторами и сделать правильный выбор.</p>
-              
-                <button>Запись на пробное занятие</button>
-                <form action=" method" >
-    
-                    <input type="text" name="username" placeholder="Введите ФИО">
-                    <input type="tel" name="tel" placeholder="Контактный телефон">
-                    <input type="number" name="number" placeholder="Возраст">
-                    <input type="text" name="time" placeholder="Удобное время для вас" >
-                    <input type="submit" value="Отправить">
-                </form>
-            
+                <button class="main__button">Запись на пробное занятие</button>
             </div>
             <div class="about__wrap-right">
-                <img class="about_image" src="images/oclube.jpg" alt="фотография о клубе"  width="300"> 
+                <img class="about__image" src="images/oclube.jpg" alt="фотография о клубе"  width="300"> 
             </div>
         </section>
 
-        <div class="trainers_wrapper">
-            <div class="trainers__cards">
+        
+        <section class="trainers">
+            <h2 class="trainers__title"> Тренеры</h2>
+            <div class="treiners__wrap">
+                          <div class="trainers__cards">
                 <img class="trainers__image" src="images/t-1.jpg" alt="фото тренера" width="300">
                 <p class="trainers__name">Петров Андрей Сергеевич</p>
             </div>
@@ -92,70 +72,113 @@
             <div class="trainers__cards">
                 <img class="trainers__image" src="images/t-3.jpg" alt="фотография тренера" width="300">
             <p class="trainers__name">Домрачева Анна Владимировна</p> 
+            </div>  
             </div>
-       </div>
 
-        <section>
-            <button>Оставить отзыв</button>
-            <h2>Форма заполнения отзыва</h2>
-            <form action="#" method=post> 
-                <p>Что вам понравилось?</p>
-                <input type="text" name="#" placeholder="#">
-                <p>Оцените удобство и комофрт спортивного зала</p>
-                <div class="rating-area">
-                    <label for="five" title="Оценка «5»"></label>	
-                    <input type="radio" id="five" name="rating" value="5">
-                    <label for="four" title="Оценка «4»"></label>    
-                    <input type="radio" id="four" name="rating" value="4">
-                    <label for="three" title="Оценка «3»"></label>  
-                    <input type="radio" id="three" name="rating" value="3">
-                    <label for="two" title="Оценка «2»"></label>    
-                    <input type="radio" id="two" name="rating" value="2">
-                    <label for="one" title="Оценка «1»"></label>
-                    <input type="radio" id="one" name="rating" value="1">
-                </div>
-            </form>
-                 <p> Оцените работу тренеров </p>
-                <div class="rating-area">
-                    <input type="radio" id="five1" name="rating" value="5">
-                    <label for="five1" title="Оценка «5»"></label>	
-                    <input type="radio" id="four1" name="rating" value="4">
-                    <label for="four1" title="Оценка «4»"></label>    
-                    <input type="radio" id="three1" name="rating" value="3">
-                    <label for="three1" title="Оценка «3»"></label>  
-                    <input type="radio" id="two1" name="rating" value="2">
-                    <label for="two1" title="Оценка «2»"></label>    
-                    <input type="radio" id="one1" name="rating" value="1">
-                    <label for="one1" title="Оценка «1»"></label>
-                </div>
-                <p>Придете к нам снова?</p>
-                <input type="radio" id="yes" name="question__back" >
-                <label for="yes">Да</label>
-                <input type="radio" id="no" name="question__back" >
-                <label for="no">Нет</label>
+        </section>
+
+        <section class="rewivew">
+            <button class="rewivew__button">Оставить отзыв</button>
         </section>
         
     </main>
     <footer class="footer container">
-        <p class="footer">Бахтина Марина ФО-41</p>
+        <p class="footer__text">Бахтина Марина ФО-41</p>
         <ul class="footer__list">
-            <li><img class="header__logo" src="images/logotip.avif" alt="логотип" width="100" height="90"></li>
-            <li><a href="#">Контакты и адрес</a></li>
-            <li><p>(8362) 600-222</p></li>
-            <li><p>fitnes.clud@mail.ru</p></li> 
-            <li><p>Лобачевского,10</p></li>
-            <li><a href="#">Соц. сети</a></li>
-            <li><img src="images/wattsap.png" alt="фотоватцап" width="50"></li>
-            <li><img src="images/telega.png" alt="фототелеграмм" width="50"></li>
-            <li><img src="images/vk-ts1623650785.png" alt="фотовк" width="50"></li>
-            <li><a href="#">Меню</a></li>
-            <li><a href="#">О клубе</a></li>
-            <li><a href="#">График работы</a></li>
-            <li><p> Понедельник-пятница 9:00-20:00</p></li>
-            <li><p>Суббота-воскресенье 8:00-20:00</p></li>
+            <li class="footer__item"><img class="footer__logo" src="images/logotip.avif" alt="логотип" width="100" height="90"></li>
+            <li class="footer__item"><a class="footer__link" href="#">Контакты и адрес</a></li>
+            <li class="footer__item"><p>(8362) 600-222</p></li>
+            <li class="footer__item"><p>fitnes.club@mail.ru</p></li> 
+            <li class="footer__item"><p>Лобачевского,10</p></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link"  href="#">Соц. сети</a></li>
+            <li class="footer__item"><img src="images/wattsap.png" alt="фотоватцап" width="50"></li>
+            <li class="footer__item"><img src="images/telega.png" alt="фототелеграмм" width="50"></li>
+            <li class="footer__item"><img src="images/vk-ts1623650785.png" alt="фотовк" width="50"></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__item"><a  class="footer__link"  href="#">Меню</a></li>
+            <li class="footer__item"><a  class="footer__link" href="#">О клубе</a></li>
+           </ul>
+
+           <ul class="footer__list">
+             <li class="footer__item"><a class="footer__link"  href="#">График работы</a></li>
+            <li class="footer__item"><p> Понедельник-пятница 9:00-20:00</p></li>
+            <li class="footer__item"><p>Суббота-воскресенье 8:00-20:00</p></li>
         </ul>
     </footer>
+    <div class="popup">
+        <section class="login">
+            <h2 class="login__title">Вход</h2>
+            <form  class="login__input" id ="input_form" action="#">
+                <input  class="login__input" type="text" name="login" placeholder="Логин">
+                <input  class="login__input" type="password" name="password" placeholder="Пароль">
+                <input  class="login__input" type="password" name="password" placeholder="Подтвердить вход">
+                <input  class="login__button" type="submit" value="Войти">
+             </form>
+        </section>
+        <section class="register">
+            <h2 class="register__title">Регистрация</h2>
+            <form class="register__form" action="#">
+                <input  class="register__input" type="text" name="username" placeholder="Введите ФИО">
+                <input class="register__input" type="number" name="number" placeholder="Дата рождения">
+                <input class="register__input" type="text" name=" " placeholder="Электронная почта">
+                <input class="register__input" type="tel" name="tel" placeholder="Контактный телефон">
+                <input class="register__button" type="submit" value="Зарегистрироваться">
+            </form>
+        </section>
+        <section  class="lesson">
+            <h2 class="lesson__title">Запись на пробное занятие</h2>
+            <form  class="lesson__form" action=" method" >
+                <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
+                <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
+                <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
+                <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас" >
+                <input class="lesson__button" type="lesson__submit" value="Отправить">
+            </form>
+        </section>
+
+    </div>
+    <section class="reviews">
+        <h2 class="reviews__title">Форма заполнения отзыва</h2>
+        <form class="reviews__form" action="#" method="post"> 
+            <p class="reviews__text">Что вам понравилось?</p>
+            <input type="text" name="#" placeholder="#">
+            <p class="reviews__text">Оцените удобство и комофрт спортивного зала</p>
+            <div class="rating-area">
+                <label for="five" title="Оценка «5»"></label>	
+                <input type="radio" id="five" name="rating" value="5">
+                <label for="four" title="Оценка «4»"></label>    
+                <input type="radio" id="four" name="rating" value="4">
+                <label for="three" title="Оценка «3»"></label>  
+                <input type="radio" id="three" name="rating" value="3">
+                <label for="two" title="Оценка «2»"></label>    
+                <input type="radio" id="two" name="rating" value="2">
+                <label for="one" title="Оценка «1»"></label>
+                <input type="radio" id="one" name="rating" value="1">
+            </div>
+        
+             <p class="reviews__text"> Оцените работу тренеров </p>
+            <div class="rating-area">
+                <input type="radio" id="five1" name="rating" value="5">
+                <label for="five1" title="Оценка «5»"></label>	
+                <input type="radio" id="four1" name="rating" value="4">
+                <label for="four1" title="Оценка «4»"></label>    
+                <input type="radio" id="three1" name="rating" value="3">
+                <label for="three1" title="Оценка «3»"></label>  
+                <input type="radio" id="two1" name="rating" value="2">
+                <label for="two1" title="Оценка «2»"></label>    
+                <input type="radio" id="one1" name="rating" value="1">
+                <label for="one1" title="Оценка «1»"></label>
+            </div>
+            <p class="reviews__text">Придете к нам снова?</p>
+            <input  class="" type="radio" id="yes" name="question__back" >
+            <label for="yes">Да</label>
+            <input type="radio" id="no" name="question__back" >
+            <label for="no">Нет</label>
+    </form>
+    </section>
 </body>
 </html>
-
 

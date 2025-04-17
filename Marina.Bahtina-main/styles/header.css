@@ -1,9 +1,11 @@
-.header{
-/* background-image: url('../images/fondluastran.avif');
-background-repeat: no-repeat;
-background-size: 1300px 100px; */
+.header {
+    background-image: url('../images/fon.webp');
+    background-repeat: no-repeat;
+    background-size: 1440px 300px;
 
-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
@@ -12,32 +14,63 @@ color: white;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-   }
+}
 
-   .menu__link{
-    display: block;
-    padding: 10px;
+.menu__link {
+    display:block;
+    padding: 5px 10px;
     margin: 5px;
-    background-color: rgba(96, 13, 129, 0.651);
+    background-color:  rgba(40, 50, 187, 0.651);
     color: rgb(255, 255, 255);
     text-decoration: none;
     
-   }
-   
-   .header__logo-wrap{
+    
+
+}
+.menu__link:hover{
+    background-color:  rgba(42, 55, 238, 0.651); 
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+}
+
+.menu__link:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }
+.header__logo-wrap {
+    text-decoration: none; 
+    color: rgba(7, 17, 104, 0.815);
     display: flex;
     align-items: center;
     gap: 10px;
-   }
+}
 
-   .header__logo-wrap{
-    text-decoration: none;
-    color: rgb(22, 0, 121);
-   }
-   .header__title{
+.header__title {
     margin: 0;
-   }
+}
 
-.menu__item{
+.menu__item {
     font-style: oblique;
 }
+.header__buttons{
+    display: flex;
+    gap: 10px;
+}
+.header__button{
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: rgba(35, 33, 172, 0.651);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.header__button:hover{
+    background-color:  rgba(42, 55, 238, 0.651); 
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+}
+
+  .header__button:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }

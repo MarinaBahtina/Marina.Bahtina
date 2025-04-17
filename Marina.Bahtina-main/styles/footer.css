@@ -1,5 +1,137 @@
-.footer__list{
+.footer{
+    margin-top: 20px;
     list-style: none;
     display: flex;
     gap: 20px;
+    background-color: rgba(21, 13, 129, 0.651);
 }
+.footer__list{
+    list-style: none;
+    color:black;
+
+    
+} 
+.footer__link{
+    text-decoration: none;
+    color: #000;
+}
+
+.login{
+    width: 800px;
+    background-color: rgba(161, 169, 238, 0.74); 
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+    .login__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .register{
+    width: 800px;
+    background-color: rgba(161, 169, 238, 0.74); 
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .register__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .lesson{
+    width: 800px;
+    background-color: rgba(161, 169, 238, 0.74); 
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .lesson__input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+  .reviews{
+    width: 800px;
+    background-color: rgba(161, 169, 238, 0.74); 
+    border: 1px solid #000;
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+    
+  }
+.popup{
+    text-align: center;
+}
+.login__button{
+    padding: 5px 10px;
+        font-size: 20px;
+        background-color: rgba(21, 13, 129, 0.651);
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        text-align:center;
+}
+.login__button:hover{
+    background-color:  rgba(42, 55, 238, 0.651); 
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+  }
+  .login__button:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }
+  .register__button{
+    padding: 5px 10px;
+        font-size: 20px;
+        background-color: rgba(21, 13, 129, 0.651);
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        text-align:center;
+}
+.register__button:hover{
+    background-color:  rgba(42, 55, 238, 0.651); 
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+  }
+  .register__button:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }
+  .lesson__button{
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: rgba(21, 13, 129, 0.651);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align:center;
+  }
+  .lesson__button:hover{
+    background-color:  rgba(42, 55, 238, 0.651); 
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+  }
+  .lesson__button:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }
+  .rewivew__button{
+
+  display: flex;
+      margin: 0 auto;
+  }
