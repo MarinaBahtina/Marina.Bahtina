@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headerButtonReg.addEventListener("click", () => {
             console.log('нажата кнопка регистрация');
             modalApplicationReg.removeAttribute("hidden");
-            
+
         });
         window.addEventListener("click", (event) => {
             if (event.target === modalApplicationReg) {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("hello");
             const filter = button.getAttribute("data-filter");
             cardsFilter.forEach((card) => {
-                 if (filter === "all") {
+                if (filter === "all") {
                     card.classList.remove("hidden");
                     console.log("dchhuh");
                 } else {
@@ -63,6 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+ 
 
-    
-});
+    //3.4 Часть 2 
+    const trenerContainer = document.querySelector(".uslugi");
+    if (trenerContainer) {
+        const dataTitleTreners = [
+            "Сайкл тренировка",
+            "Пилатес",
+            "Кардиозона",
+            "Персональный тренинг",
+
+        ];
+        const titleTreners = trenerContainer.querySelectorAll(".uslugi__one");
+        titleTreners.forEach((item, index) => {
+            item.textContent = dataTitleTreners[index];
+        });
+    }
+ });
