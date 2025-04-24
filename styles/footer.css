@@ -1,137 +1,212 @@
-.footer{
-    margin-top: 20px;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    background-color: rgba(21, 13, 129, 0.651);
-}
-.footer__list{
-    list-style: none;
-    color:black;
-
-    
-} 
-.footer__link{
-    text-decoration: none;
-    color: #000;
+.footer {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: rgba(21, 13, 129, 0.651);
 }
 
-.login{
-    width: 800px;
-    background-color: rgba(161, 169, 238, 0.74); 
-    border: 1px solid #000;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
+.footer__list {
+  list-style: none;
+  color: black;
+
+
 }
-    .login__input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
-  }
-  .register{
-    width: 800px;
-    background-color: rgba(161, 169, 238, 0.74); 
-    border: 1px solid #000;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
-  }
-  .register__input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
-  }
-  .lesson{
-    width: 800px;
-    background-color: rgba(161, 169, 238, 0.74); 
-    border: 1px solid #000;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
-  }
-  .lesson__input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
-  }
-  .reviews{
-    width: 800px;
-    background-color: rgba(161, 169, 238, 0.74); 
-    border: 1px solid #000;
-    text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
-    
-  }
-.popup{
-    text-align: center;
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
 }
-.login__button{
-    padding: 5px 10px;
-        font-size: 20px;
-        background-color: rgba(21, 13, 129, 0.651);
-        color: rgb(255, 255, 255);
-        border-radius: 20px;
-        text-align:center;
+
+.login {
+  position: absolute;
+  /* позиционируется абсолютно*/
+  top: 50%;
+  /* верхняя часть смещена на 50% высоты родителя*/
+  left: 50%;
+  /*левая граница смещена на 50% ширины родителя*/
+  transform: translate(-50%, -50%);
+  /* смещаем элемент относительно его текущего положения*/
+  max-width: 800px;
+  /* Максимальная ширина окна */
+
+  width: 800px;
+  background-color: rgb(161, 169, 238);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
 }
-.login__button:hover{
-    background-color:  rgba(42, 55, 238, 0.651); 
-    box-shadow: 0 8px 16px 0
-rgba(0,0,0,0.2);
-  }
-  .login__button:active{
-    background-color: #2f2961;
-    color: #ffffff
-  }
-  .register__button{
-    padding: 5px 10px;
-        font-size: 20px;
-        background-color: rgba(21, 13, 129, 0.651);
-        color: rgb(255, 255, 255);
-        border-radius: 20px;
-        text-align:center;
+
+.login__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
 }
-.register__button:hover{
-    background-color:  rgba(42, 55, 238, 0.651); 
-    box-shadow: 0 8px 16px 0
-rgba(0,0,0,0.2);
-  }
-  .register__button:active{
-    background-color: #2f2961;
-    color: #ffffff
-  }
-  .lesson__button{
-    padding: 5px 10px;
-    font-size: 20px;
-    background-color: rgba(21, 13, 129, 0.651);
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
-    text-align:center;
-  }
-  .lesson__button:hover{
-    background-color:  rgba(42, 55, 238, 0.651); 
-    box-shadow: 0 8px 16px 0
-rgba(0,0,0,0.2);
-  }
-  .lesson__button:active{
-    background-color: #2f2961;
-    color: #ffffff
-  }
-  .rewivew__button{
+
+.register {
+  position: absolute;
+  /* позиционируется абсолютно*/
+  top: 50%;
+  /* верхняя часть смещена на 50% высоты родителя*/
+  left: 50%;
+  /*левая граница смещена на 50% ширины родителя*/
+  transform: translate(-50%, -50%);
+  /* смещаем элемент относительно его текущего положения*/
+  max-width: 800px;
+  /* Максимальная ширина окна */
+  width: 800px;
+  background-color: rgb(161, 169, 238);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.register__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.lesson {
+  width: 800px;
+  background-color: rgba(161, 169, 238, 0.74);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.lesson__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.reviews {
+  width: 800px;
+  background-color: rgba(161, 169, 238, 0.74);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+
+}
+
+.popup,
+.popup-reg {
+  position: fixed;
+  /* позицинорование фиксированное */
+  top: 0;
+  /* Элемент будет находиться на верхней границе экрана*/
+  left: 0;
+  /* Элемент будет находиться на левой границе экрана.*/
+  width: 100%;
+  /* Ширина 100% от окна браузера */
+  height: 100%;
+  /* Высота 100% от окна браузера */
+  background-color: rgba(58, 60, 65, 0.7);
+  /*задаем фон Полупрозрачный с цветом */
+  text-align: center;
+}
+
+.login__button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgba(21, 13, 129, 0.651);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.login__button:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login__button:active {
+  background-color: #2f2961;
+  color: #ffffff
+}
+
+.register__button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgba(21, 13, 129, 0.651);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.register__button:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register__button:active {
+  background-color: #2f2961;
+  color: #ffffff
+}
+
+.lesson__button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgba(21, 13, 129, 0.651);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.lesson__button:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.lesson__button:active {
+  background-color: #2f2961;
+  color: #ffffff
+}
+
+.rewivew__button {
 
   display: flex;
-      margin: 0 auto;
-  }
+  margin: 0 auto;
+}
+.login__close {
+  position: absolute;
+  /* позиционируется абсолютно*/
+  top: 0;
+  /* Элемент будет находиться на верхней границе родителя*/
+  right: 0;
+  /* элемент будет прижат к правой стороне родителя */
+  padding: 10px;
+  /* Внутренние отступы с каждой стороны 10px*/
+  background-color: #7c77bd;
+  /*фон кнопки*/
+}
+
+.register__close {
+  position: absolute;
+  /* позиционируется абсолютно*/
+  top: 0;
+  /* Элемент будет находиться на верхней границе родителя*/
+  right: 0;
+  /* элемент будет прижат к правой стороне родителя */
+  padding: 10px;
+  /* Внутренние отступы с каждой стороны 10px*/
+  background-color: #7c77bd;
+  /*фон кнопки*/
+}
