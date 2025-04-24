@@ -6,8 +6,10 @@
     <title>Фитнес-клуб</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <script src="script.js"></script>
     <header class="header container">
         <a class="header__logo-wrap" href="index.html">
        <img class="header__logo" src="images/logotip.avif" alt="логотип" width="100" height="90">
@@ -26,7 +28,7 @@
                     <a class="menu__link" href="trener.html">Тренеры</a> 
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="uslugi.html">Фитнес-услуги</a> 
+                    <a class="menu__link" href="#">Фитнес-услуги</a> 
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#">О клубе</a>
@@ -34,14 +36,11 @@
                 <li class="menu__item">
                     <a class="menu__link" href="#">Оставить отзыв</a> 
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="biblioteka.html">Библиотека упражнений</a>
-                </li>
-               
+                
             </ul>
         </nav>
         <div class="header__buttons">
-            <button class="header__button">Вход</button>
+            <button class="header__button" >Вход</button> 
             <button class="header__button">Регистрация</button>
         </div>
     </header>
@@ -53,34 +52,82 @@
                 <button class="main__button">Запись на пробное занятие</button>
             </div>
             <div class="about__wrap-right">
-                <img class="about_image" src="images/oclube.jpg" alt="фотография о клубе"  width="300"> 
+                <img class="about__image" src="images/oclube.jpg" alt="фотография о клубе"  width="300"> 
             </div>
         </section>
 
         
         <section class="trainers">
             <h2 class="trainers__title"> Тренеры</h2>
+            <p class="trainers__text" >Наши тренеры имеют большой опыт работы в области фитнеса и спорта, постоянно повышают свою квалификацию и готовы ответить на все ваши вопросы. Запишитесь на занятие и убедитесь в профессионализме наших специалистов!</p>
             <div class="treiners__wrap">
-                          <div class="trainers__cards">
+           <div class="trainers__cards">
                 <img class="trainers__image" src="images/t-1.jpg" alt="фото тренера" width="300">
                 <p class="trainers__name">Петров Андрей Сергеевич</p>
+                <p  class="trainers__tex" > СПЕЦИАЛИЗАЦИЯ
+                    • Разработка методики оздоровления ослабшего организма и организма человека пожилого возраста;
+                    • Разработка индивидуальных тренировочных программ людям с поражением опорно-двигательного аппарата;
+                    • Применение современных методик тренировок в том числе и по системе Бубновского С.;
+                    • Постановка техники выполнения упражнений на тренажере Бубновского.</p>
             </div>
             <div class="trainers__cards">
                 <img class="trainers__image" src="images/t-2.jpg" alt="фото тренераа" width="300">
                 <p class="trainers__name">Сидоров Павел Николаевич</p>
+                <p  class="trainers__tex" > СПЕЦИАЛИЗАЦИЯ
+                    • Силовой тренинг
+                    • Коррекция веса тела
+                    • Построение индивидуальных планов питания
+                    • Коррекция дефицитных состояний организма
+                    • Работа с анализами
+                    • Набор мышечной массы
+                    • Функциональный тренинг
+                    • Восстановление после травм и операций,
+                    • Подготовка к соревнованиям по бодибилдингу, классическому бодибилдингу, бикини.</p>
             </div>
             <div class="trainers__cards">
                 <img class="trainers__image" src="images/t-3.jpg" alt="фотография тренера" width="300">
             <p class="trainers__name">Домрачева Анна Владимировна</p> 
+            
+            <p  class="trainers__tex" >  СПЕЦИАЛИЗАЦИЯ
+                • Персональный тренинг в тренажерном зале: набор мышечной массы, коррекция фигуры и осанки;
+                • Женский и детский кроссфит;
+                • Восстановление после травм;
+                • ЛФК при нарушениях опорно-двигательного аппарата;
+                • Инструктор групповых направлений по силовой аэробике, стретчингу, калланетике, здоровому позвоночнику;
+                • Любая возрастная группа. </p>
             </div>  
             </div>
 
         </section>
 
-        <section>
-            <div class="main__button">
-            <button class="main__button">Оставить отзыв</button>
+        <section class="uslugi">
+            <p class="uslugi__text">Фитнес-услуги</p>
+            <div class="uslugi__wrapper">
+             <div class="uslugi__vid">
+           <img class="uslugi__image" src="images/SAUKLTREN.jpg" alt="фото с тренировки" width="300">
+            <p class="uslugi__one"> Сайкл тренировка</p>
+            <p class="uslugi__tex"> Кардио тренировка высокой интенсивности на специальных велотренажерах </p>
             </div>
+
+            <div class="uslugi__vid">
+            <img class="uslugi__image" src="images/PILATES.jpg" alt="фото с тренировки" width="300">
+            <p class="uslugi__one"> Пилатес</p>
+            <p class="uslugi__tex">Это система упражнений , направленная на укрепление мышечного корсета, улучшает координацию движения, снимает стресс с позвоночника, улучшает баланс и координацию.</p>
+            </div>
+
+                <div class="uslugi__vid">
+                <img class="uslugi__image" src="images/KARDIOZONA.jpg" alt="фото с тренировки" width="300">
+                <p class="uslugi__one"> Кардиозона</p>
+                <p class="uslugi__tex">Здесь вы найдете беговые дорожки, эллиптические тренажеры, степперы, а также другие кардиотренажеры. Мы также предоставляем возможность заниматься под руководством опытных тренеров, которые помогут достигнуть ваших целей.</p>
+            </div>
+                <div class="uslugi__vid" >
+                    <img class="uslugi__image" src="images/PERSONTREN.webp" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Персональный тренинг</p>
+                    <p class="uslugi__tex">В процессе тренировок очень важно соблюдать правильную технику выполнения упражнений. Помочь вам в этом может только опытный специалист, поэтому никогда не пренебрегайте помощью инструктора.  </p>
+                </div>
+                </section>
+        <section class="rewivew">
+            <button class="rewivew__button">Оставить отзыв</button>
         </section>
         
     </main>
@@ -111,8 +158,8 @@
         </ul>
     </footer>
     <div class="popup">
-        <section class="login">
-            <h2 class="login__title">Вход</h2>
+        <section class="login" >
+            <h2 class="login__title" >Вход</h2>
             <form  class="login__input" id ="input_form" action="#">
                 <input  class="login__input" type="text" name="login" placeholder="Логин">
                 <input  class="login__input" type="password" name="password" placeholder="Пароль">
@@ -131,24 +178,23 @@
             </form>
         </section>
         <section  class="lesson">
-            <h2 class="__title">Запись на пробное занятие</h2>
-            <form  class="__form" action=" method" >
-    
-                <input class="__input" type="text" name="username" placeholder="Введите ФИО">
-                <input type="tel" name="tel" placeholder="Контактный телефон">
-                <input type="number" name="number" placeholder="Возраст">
-                <input type="text" name="time" placeholder="Удобное время для вас" >
-                <input type="submit" value="Отправить">
+            <h2 class="lesson__title">Запись на пробное занятие</h2>
+            <form  class="lesson__form" action=" method" >
+                <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
+                <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
+                <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
+                <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас" >
+                <input class="lesson__button" type="lesson__submit" value="Отправить">
             </form>
         </section>
 
     </div>
     <section class="reviews">
-        <h2 class="__title">Форма заполнения отзыва</h2>
-        <form class="__form" action="#" method="post"> 
-            <p class="__text">Что вам понравилось?</p>
+        <h2 class="reviews__title">Форма заполнения отзыва</h2>
+        <form class="reviews__form" action="#" method="post"> 
+            <p class="reviews__text">Что вам понравилось?</p>
             <input type="text" name="#" placeholder="#">
-            <p class="__text">Оцените удобство и комофрт спортивного зала</p>
+            <p class="reviews__text">Оцените удобство и комофрт спортивного зала</p>
             <div class="rating-area">
                 <label for="five" title="Оценка «5»"></label>	
                 <input type="radio" id="five" name="rating" value="5">
@@ -162,7 +208,7 @@
                 <input type="radio" id="one" name="rating" value="1">
             </div>
         
-             <p class="__text"> Оцените работу тренеров </p>
+             <p class="reviews__text"> Оцените работу тренеров </p>
             <div class="rating-area">
                 <input type="radio" id="five1" name="rating" value="5">
                 <label for="five1" title="Оценка «5»"></label>	
@@ -175,7 +221,7 @@
                 <input type="radio" id="one1" name="rating" value="1">
                 <label for="one1" title="Оценка «1»"></label>
             </div>
-            <p class="__text">Придете к нам снова?</p>
+            <p class="reviews__text">Придете к нам снова?</p>
             <input  class="" type="radio" id="yes" name="question__back" >
             <label for="yes">Да</label>
             <input type="radio" id="no" name="question__back" >

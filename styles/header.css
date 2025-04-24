@@ -33,13 +33,17 @@
 rgba(0,0,0,0.2);
 }
 
-
+.menu__link:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }
 .header__logo-wrap {
     text-decoration: none; 
     color: rgba(7, 17, 104, 0.815);
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 10px;
 }
 
 .header__title {
@@ -60,3 +64,14 @@ rgba(0,0,0,0.2);
     color: rgb(255, 255, 255);
     border-radius: 20px;
 }
+
+.header__button:hover{
+    background-color:  rgba(42, 55, 238, 0.651); 
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+}
+
+  .header__button:active{
+    background-color: #2f2961;
+    color: #ffffff
+  }
