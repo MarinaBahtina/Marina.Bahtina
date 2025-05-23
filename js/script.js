@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
- 
+
 
     //3.4 Часть 2 
     const trenerContainer = document.querySelector(".uslugi");
@@ -80,4 +80,113 @@ document.addEventListener("DOMContentLoaded", () => {
             item.textContent = dataTitleTreners[index];
         });
     }
- });
+    //3.5
+    const cardsPrice = document.querySelector('.trainers');
+    if (cardsPrice) {
+        const priceList = cardsPrice.querySelector('.treiners__wrap');
+        const cardsPriceData = {
+            trener1: {
+                image: 'images/t-1.jpg',
+                name: 'Петров Андрей Сергеевич',
+                description: 'СПЕЦИАЛИЗАЦИЯ • Разработка методики оздоровления ослабшего организма и организма человека пожилого возраста; • Разработка индивидуальных тренировочных программ людям с поражением опорно-двигательного аппарата;• Применение современных методик тренировок в том числе и по системе Бубновского С.; • Постановка техники выполнения упражнений на тренажере Бубновского.',
+
+            },
+            trener2: {
+                image: 'images/t-2.jpg',
+                name: 'Сидоров Павел Николаевич',
+                description: 'СПЕЦИАЛИЗАЦИЯ • Силовой тренинг• Коррекция веса тела  • Построение индивидуальных планов питания • Коррекция дефицитных состояний организма• Работа с анализами  • Набор мышечной массы • Функциональный тренинг • Восстановление после травм и операций, • Подготовка к соревнованиям по бодибилдингу, классическому бодибилдингу, бикини.',
+
+            },
+            trener3: {
+                image: 'images/t-3.jpg',
+                name: 'Домрачева Анна Владимировна',
+                description: 'СПЕЦИАЛИЗАЦИЯ • Персональный тренинг в тренажерном зале: набор мышечной массы, коррекция фигуры и осанки; • Женский и детский кроссфит; • Восстановление после травм; • ЛФК при нарушениях опорно-двигательного аппарата; • Инструктор групповых направлений по силовой аэробике, стретчингу, калланетике, здоровомупозвоночнику; • Любая возрастная группа.',
+
+            }
+        }
+
+        const createCard = (image, name, description) => {
+            const card = `
+            <li class="trainers__cards">
+            <img class="trainers__image" src="${image}" alt="фотография тренера" width="300">
+                <p class="trainers__name">${name}</p>
+                <p class="trainers__description">${description}</p>
+                
+            </li>
+        `;
+            return card;
+        }
+        for (const cardKey in cardsPriceData) {
+            const card = cardsPriceData[cardKey];
+            const cardElement = createCard(card.image, card.name, card.description,);
+            priceList.insertAdjacentHTML('beforeend', cardElement);
+        }
+    }
+
+
+//3.6 Часть 1
+const cardsCon = document.querySelector(".zal");
+if (cardsCon) {
+    const cardList = cardsCon.querySelector(".zal__wrapper");
+
+    // Пример URL для получения данных с сервера
+    const apiUrl = "data.json";
+
+    // Функция для создания карточки
+    const createCard = (
+        title,
+        image,
+        iconAlt,
+        iconWidth,
+        iconHeight
+    ) => {
+        // Шаблонные строки и подстановки
+        const card = `
+             <div class="zal__wrap">
+                <p class="zal__vid">${title}</p>
+                <img class="zal__image" src="${image}" alt="${iconAlt}" width="${iconWidth}" height="${iconHeight}">
+            </div>
+         `;
+        return card;
+    };
+    // Загрузка данных с сервера
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data); // Данные
+            console.log(typeof data); // Тип полученных данных
+
+            data.forEach((item) => {
+                const cardElement = createCard(
+                    item.title,
+                    item.image,
+                    item.iconAlt,
+                    item.iconWidth,
+                    item.iconHeight
+                );
+                cardList.insertAdjacentHTML("beforeend", cardElement);
+            });
+        })
+        .catch((error) => {
+            console.error("Ошибка при загрузке данных:", error);
+        });
+
+};
+//3.6 Часть 2
+const preloader = document.querySelector(".preloader");
+const content = document.querySelector(".content");
+if (preloader && content) {
+    setTimeout(() => {
+        // Скрываем прелоадер
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+
+        // Показываем контент
+        content.style.display = "block";
+
+        // Удаляем элемент из DOM
+        preloader.remove();
+    }, 3000); // Задержка 3 секунды
+}
+
+});
