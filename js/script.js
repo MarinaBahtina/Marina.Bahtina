@@ -9,28 +9,30 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log('нажата кнопка войти');
             modalApplication.removeAttribute("hidden");
         });
-
+    }
         window.addEventListener("click", (event) => {
             if (event.target === modalApplication) {
                 modalApplication.setAttribute("hidden", true);
             }
         });
 
-    }
+
     const closeModalButton = document.querySelector(".login__close");
     closeModalButton.addEventListener("click", () => {
         modalApplication.setAttribute("hidden", true);
     });
 
+
     //Регистрация
     const headerButtonReg = document.querySelector(".header__register");
     const modalApplicationReg = document.querySelector(".popup-reg");
-    if (headerButtonReg && headerButtonReg) {
+    if (headerButtonReg && modalApplicationReg) {
         headerButtonReg.addEventListener("click", () => {
             console.log('нажата кнопка регистрация');
             modalApplicationReg.removeAttribute("hidden");
 
         });
+    }
         window.addEventListener("click", (event) => {
             if (event.target === modalApplicationReg) {
                 modalApplicationReg.setAttribute("hidden", true);
@@ -40,7 +42,49 @@ document.addEventListener("DOMContentLoaded", () => {
         closeModalButtonReg.addEventListener("click", () => {
             modalApplicationReg.setAttribute("hidden", true);
         });
-    }
+
+        //3.7 ИСПОЛЬЗОВАНИЕ LOCALSTORAGE 
+        // Объявляем переменную formApplication и помещаем в нее элемент с id "formApplication"
+const formApplication = document.querySelector("#formApplication"); 
+// Проверяем, существует ли элемент formApplication
+if (formApplication) {  
+    // Добавляем обработчик события для отправки формы
+   formApplication.addEventListener("submit", (event) => {
+     event.preventDefault(); // Предотвращаем отправку формы
+    // Объявляем переменные "username", "tel","email",   и помещаем в нее элементы с id из формы
+     const username = formApplication.querySelector("#username").value;
+     const number = formApplication.querySelector("#number").value;
+     const email = formApplication.querySelector("#email").value;
+     const tel = formApplication.querySelector("#tel").value;
+     
+     // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+const modalMessage = modalApplicationReg.querySelector("#application-message");
+    
+      // Проверка длины имени пользователя
+      if (username.length < 3) {
+         modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+         modalMessage.style.color = "black"; // Устанавливаем цвет сообщения об ошибке
+         return;
+      }
+    
+       // Проверка номера телефона
+      if (!/^\d{10,}$/.test(tel)) {
+          modalMessage.textContent = "Номер телефона должен содержать только цифры и быть не менее 10 символов";
+          modalMessage.style.color = "black"; // Устанавливаем цвет сообщения
+          return;
+      }
+    
+      // Здесь можно добавить отправку данных на сервер
+      modalMessage.textContent = "Заявка отправлена!";
+      modalMessage.style.color = "green"; // Устанавливаем цвет сообщения для успешной отправки
+    
+      // Записываем данные в localStorage
+      window.localStorage.setItem("username", username);
+      window.localStorage.setItem("tel", tel);
+      window.localStorage.setItem("email", email);
+});
+
+ 
     //3.4 Фильтр
     const buttons = document.querySelectorAll(".uslugi__btn");
     const cardsFilter = document.querySelectorAll(".uslugi__vid");
@@ -188,5 +232,26 @@ if (preloader && content) {
         preloader.remove();
     }, 3000); // Задержка 3 секунды
 }
+}}
+);
+//3.7 Часть 1
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+        const swiper1 = new Swiper(sliders, {
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
 
-});
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+        },
+        });
+    }
+
+

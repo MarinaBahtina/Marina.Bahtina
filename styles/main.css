@@ -312,3 +312,21 @@ margin: 35px5px;/* Отступы вокруг кругов */
      transform: translateY(-30px);/* круги поднимаются */
  }
 }
+.inventar__wrapper{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inventar__image{
+  margin: 0 auto;
+}
+
+.zal__title {
+  text-align: center;
+}
+
+.inventar__title {
+  text-align: center;
+}
