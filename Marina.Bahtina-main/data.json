@@ -1,0 +1,30 @@
+[
+    {
+        "title":"Зал №1",
+        "image": "images/fitnesszal1.jpg",
+        "iconAlt":"зал 1",
+        "iconWidth":300,
+        "iconHeight":250
+    },
+    {
+        "title":"Зал №2",
+        "image": "images/fitnaszal2.jpg",
+        "inconAlt":"зал 2",
+        "iconWidth":300,
+        "iconHeight":250
+    },
+       {
+           "title":"Зал №3",
+        "image": "images/fitneszal3.jpg",
+        "inconAlt":"зал 3",
+        "iconWidth":300,
+        "iconHeight":250
+    },
+{
+    "title":"Зал №4",
+    "image": "images/fitneszal4.jpg",
+    "iconAlt":"зал 4",
+    "iconWidth":300,
+    "inconHeight":250
+}
+]

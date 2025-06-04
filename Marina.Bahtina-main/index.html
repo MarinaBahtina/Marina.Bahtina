@@ -1,186 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фитнес-клуб</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="script.js"></script>
 </head>
+
 <body>
-    <script src="script.js"></script>
+<div class="preloader">
+    <div class="loader"> 
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+        <span class="dot4"></span>
+        <span class="dot5"></span>
+    </div>
+Загрузка...
+</div>
+<div class="content">
     <header class="header container">
         <a class="header__logo-wrap" href="index.html">
-       <img class="header__logo" src="images/logotip.avif" alt="логотип" width="100" height="90">
-       <h1 class="header__title" >Фитнес-клуб</h1>
-    </a>
-         
+            <img class="header__logo" src="images/logotip.avif" alt="логотип" width="100" height="90">
+            <h1 class="header__title">Фитнес-клуб</h1>
+        </a>
+
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item">
                     <a class="menu__link" href="#">Главная</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="raspisanie.html">Расписание</a> 
+                    <a class="menu__link" href="#trener">Тренеры</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="trener.html">Тренеры</a> 
+                    <a class="menu__link" href="#uslugi">Фитнес-услуги</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="uslugi.html">Фитнес-услуги</a> 
+                    <a class="menu__link" href="#oclube">О клубе</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#">О клубе</a>
+                    <a class="menu__link" href="#otzuv">Оставить отзыв</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Оставить отзыв</a> 
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="biblioteka.html">Библиотека упражнений</a>
-                </li>
-               
+
             </ul>
         </nav>
-        <div class="header__buttons">
-            <button class="header__button">Вход</button>
-            <button class="header__button">Регистрация</button>
+        <div class="header__buttons" >
+            <button class="header__button header__enter" type="button">Вход</button>
+            <button class="header__button header__register" type="button">Регистрация</button>
         </div>
     </header>
     <main class="main container">
-        <section class="about">
-            <div class = "about__wrap-left" >
-                <h2 class="about__title">Информация о клубе</h2>    
-              <p class = "about__title__desc"> Мы понимаем, как сложно выбрать фитнес-клуб для тренировок. Именно поэтому предлагаем всем желающим абсолютно бесплатное первое занятие. Вы сможете ознакомиться с нашими залами, познакомиться с инструкторами и сделать правильный выбор.</p>
-                <button class="main__button">Запись на пробное занятие</button>
+
+        <section class="about" id="oclube">
+            <div class="about__wrap-left">
+                <h2 class="about__title">Информация о клубе</h2>
+                <p class="about__title__desc"> Мы понимаем, как сложно выбрать фитнес-клуб для тренировок. Именно
+                    поэтому предлагаем всем желающим абсолютно бесплатное первое занятие. Вы сможете ознакомиться с
+                    нашими залами, познакомиться с инструкторами и сделать правильный выбор.</p>
+                <button class="main__button main__zapis">Запись на пробное занятие</button>
             </div>
             <div class="about__wrap-right">
-                <img class="about__image" src="images/oclube.jpg" alt="фотография о клубе"  width="300"> 
+                <img class="about__image" src="images/oclube.jpg" alt="фотография о клубе" width="300">
             </div>
         </section>
-
+        <section class="lesson" hidden>
+            <h2 class="lesson__title">Запись на пробное занятие</h2>
+            <button class="lesson__close"> X</button>
+            <form class="lesson__form" action=" method" >
+                <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
+                <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
+                <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
+                <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас">
+                <input class="lesson__button" type="lesson__submit" value="Отправить">
+            </form>
+        </section>
         
-        <section class="trainers">
+
+        <section class="trainers" id="trener">
             <h2 class="trainers__title"> Тренеры</h2>
+            <p class="trainers__text">Наши тренеры имеют большой опыт работы в области фитнеса и спорта, постоянно
+                повышают свою квалификацию и готовы ответить на все ваши вопросы. Запишитесь на занятие и убедитесь в
+                профессионализме наших специалистов!</p>
             <div class="treiners__wrap">
-                          <div class="trainers__cards">
-                <img class="trainers__image" src="images/t-1.jpg" alt="фото тренера" width="300">
-                <p class="trainers__name">Петров Андрей Сергеевич</p>
-            </div>
-            <div class="trainers__cards">
-                <img class="trainers__image" src="images/t-2.jpg" alt="фото тренераа" width="300">
-                <p class="trainers__name">Сидоров Павел Николаевич</p>
-            </div>
-            <div class="trainers__cards">
-                <img class="trainers__image" src="images/t-3.jpg" alt="фотография тренера" width="300">
-            <p class="trainers__name">Домрачева Анна Владимировна</p> 
-            </div>  
+                <!-- <div class="trainers__cards">
+                    <img class="trainers__image" src="images/t-1.jpg" alt="фото тренера" width="300">
+                    <p class="trainers__name">Петров Андрей Сергеевич</p>
+                    <p class="trainers__tex"> СПЕЦИАЛИЗАЦИЯ
+                        • Разработка методики оздоровления ослабшего организма и организма человека пожилого возраста;
+                        • Разработка индивидуальных тренировочных программ людям с поражением опорно-двигательного
+                        аппарата;
+                        • Применение современных методик тренировок в том числе и по системе Бубновского С.;
+                        • Постановка техники выполнения упражнений на тренажере Бубновского.</p>
+                </div>
+                <div class="trainers__cards">
+                    <img class="trainers__image" src="images/t-2.jpg" alt="фото тренераа" width="300">
+                    <p class="trainers__name">Сидоров Павел Николаевич</p>
+                    <p class="trainers__tex"> СПЕЦИАЛИЗАЦИЯ
+                        • Силовой тренинг
+                        • Коррекция веса тела
+                        • Построение индивидуальных планов питания
+                        • Коррекция дефицитных состояний организма
+                        • Работа с анализами
+                        • Набор мышечной массы
+                        • Функциональный тренинг
+                        • Восстановление после травм и операций,
+                        • Подготовка к соревнованиям по бодибилдингу, классическому бодибилдингу, бикини.</p>
+                </div>
+                <div class="trainers__cards">
+                    <img class="trainers__image" src="images/t-3.jpg" alt="фотография тренера" width="300">
+                    <p class="trainers__name">Домрачева Анна Владимировна</p>
+
+                    <p class="trainers__tex"> СПЕЦИАЛИЗАЦИЯ
+                        • Персональный тренинг в тренажерном зале: набор мышечной массы, коррекция фигуры и осанки;
+                        • Женский и детский кроссфит;
+                        • Восстановление после травм;
+                        • ЛФК при нарушениях опорно-двигательного аппарата;
+                        • Инструктор групповых направлений по силовой аэробике, стретчингу, калланетике, здоровому
+                        позвоночнику;
+                        • Любая возрастная группа. </p>
+                </div> -->
             </div>
 
         </section>
-
-        <section class="rewivew">
-            <button class="rewivew__button">Оставить отзыв</button>
+        <section class="zal">
+            <h2 class="zal__title">Залы</h2>
+            <div class="zal__wrapper">
+            <!-- <div class="zal__wrap">
+                <p class="zal__vid">Зал №1</p>
+                <img class="zal__image" src="images/fitnesszal1.jpg" alt="" width="300">
+            </div>
+            <div class="zal__wrap">
+                <p class="zal__vid">Зал №2</p>
+                <img class="zal__image" src="images/fitnaszal2.jpg" alt="" width="300">
+            </div>
+            <div class="zal__wrap">
+                <p class="zal__vid">Зал №3</p>
+                <img class="zal__image" src="images/fitneszal3.jpg" alt="" width="300">
+            </div>
+            <div class="zal__wrap">
+                <p class="zal__vid">Зал №4</p>
+                <img class="zal__image" src="images/fitneszal4.jpg" alt="" width="300">
+            </div> -->
+        </div>
         </section>
-        
+        <section class="inventar">
+            <h2 class="inventar__title">Инвентарь</h2>
+            <!--<div class="inventar__wrapper">
+            <div class="inventar__wrap">
+                <p class="inventar__vid">Резинки для фитнеса</p>
+                <img class="inventar__image" src="images/rezinki.webp" alt="" width="300">
+            </div>
+            <div class="inventar__wrap">
+                <p class="inventar__vid">Мяч для бокса</p>
+                <img class="inventar__image" src="images/muach box.webp" alt="" width="300">
+            </div>
+            <div class="inventar__wrap">
+                <p class="inventar__vid">Перчатки для фитнеса</p>
+                <img class="inventar__image" src="images/percatki.webp" alt="" width="300">
+            </div>
+            <div class="inventar__wrap">
+                <p class="inventar__vid">Гантели</p>
+                <img class="inventar__image" src="images/ganteli.webp" alt="" width="300">
+                <div class="inventar__wrap">
+                <p class="inventar__vid">Пояс кроссфит</p>
+                <img class="inventar__image" src="images/pouaz crossfit.webp" alt="" width="300">
+                <p class="inventar__vid">Коврик для йоги</p>
+                <img class="inventar__image" src="images/covrik.jpg" alt="" width="300">
+            </div>-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> 
+                    <img class="inventar__image" src="images/rezinki.webp" alt="" width="300"></div>
+                  <div class="swiper-slide"> 
+                    <img class="inventar__image" src="images/muach box.webp" alt="" width="300"></div>
+                  <div class="swiper-slide">
+                    <img class="inventar__image" src="images/percatki.webp" alt="" width="300"></div>
+                  <div class="swiper-slide">
+                    <img class="inventar__image" src="images/ganteli.webp" alt="" width="300"></div>
+                    <div class="swiper-slide">
+                    <img class="inventar__image" src="images/pouaz crossfit.webp" alt="" width="300"></div>
+                    <div class="swiper-slide">
+                    <img class="inventar__image" src="images/covrik.jpg" alt="" width="300"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+</section>
+        <section class="uslugi" id="uslugi">
+            <p class="uslugi__text">Фитнес-услуги</p>
+            <div class="uslugi__buttons">
+                <button class="uslugi__btn" data-filter="all" type="button">все</button>
+                    <button class="uslugi__btn" data-filter="pilates"type="button">Пилатес</button>
+                    <button class="uslugi__btn" data-filter="saycle"type="button">Сайкл</button>
+                    <button class="uslugi__btn" data-filter="cardio"type="button">Кардио</button>
+                    
+            </div>
+            <div class="uslugi__wrapper">
+                <div class="uslugi__vid saycle">
+                    <img class="uslugi__image" src="images/SAUKLTREN.jpg" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Тренировка 1</p>
+                    <p class="uslugi__tex"> Кардио тренировка высокой интенсивности на специальных велотренажерах </p>
+                </div>
+
+                <div class="uslugi__vid pilates">
+                    <img class="uslugi__image" src="images/PILATES.jpg" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Тренировка 2</p>
+                    <p class="uslugi__tex">Это система упражнений , направленная на укрепление мышечного корсета,
+                        улучшает координацию движения, снимает стресс с позвоночника, улучшает баланс и координацию.</p>
+                </div>
+
+                <div class="uslugi__vid cardio">
+                    <img class="uslugi__image" src="images/KARDIOZONA.jpg" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one "> Тренировка 3</p>
+                    <p class="uslugi__tex">Здесь вы найдете беговые дорожки, эллиптические тренажеры, степперы, а также
+                        другие кардиотренажеры. Мы также предоставляем возможность заниматься под руководством опытных
+                        тренеров, которые помогут достигнуть ваших целей.</p>
+                </div>
+                <div class="uslugi__vid">
+                    <img class="uslugi__image" src="images/PERSONTREN.webp" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Тренировка 4</p>
+                    <p class="uslugi__tex">В процессе тренировок очень важно соблюдать правильную технику выполнения
+                        упражнений. Помочь вам в этом может только опытный специалист, поэтому никогда не пренебрегайте
+                        помощью инструктора. </p>
+                </div>
+        </section>
+        <section class="rewivew" id="otzuv">
+            <button class="rewivew__button rewivew__otzuv ">Оставить отзыв</button>
+        </section>
+  <section class="reviews" hidden>
+        <h2 class="reviews__title">Форма заполнения отзыва</h2>
+        <button class="reviews__close"> X</button>
+        <form class="reviews__form" action="#" method="post">
+            <p class="reviews__text">Что вам понравилось?</p>
+            <input type="text" name="#" placeholder="#">
+            <p class="reviews__text">Оцените удобство и комофрт спортивного зала</p>
+            <div class="rating-area">
+                <label for="five" title="Оценка «5»"></label>
+                <input type="radio" id="five" name="rating" value="5">
+                <label for="four" title="Оценка «4»"></label>
+                <input type="radio" id="four" name="rating" value="4">
+                <label for="three" title="Оценка «3»"></label>
+                <input type="radio" id="three" name="rating" value="3">
+                <label for="two" title="Оценка «2»"></label>
+                <input type="radio" id="two" name="rating" value="2">
+                <label for="one" title="Оценка «1»"></label>
+                <input type="radio" id="one" name="rating" value="1">
+            </div>
+
+            <p class="reviews__text" hidden> Оцените работу тренеров </p>
+            <div class="rating-area">
+                <input type="radio" id="five1" name="rating" value="5">
+                <label for="five1" title="Оценка «5»"></label>
+                <input type="radio" id="four1" name="rating" value="4">
+                <label for="four1" title="Оценка «4»"></label>
+                <input type="radio" id="three1" name="rating" value="3">
+                <label for="three1" title="Оценка «3»"></label>
+                <input type="radio" id="two1" name="rating" value="2">
+                <label for="two1" title="Оценка «2»"></label>
+                <input type="radio" id="one1" name="rating" value="1">
+                <label for="one1" title="Оценка «1»"></label>
+            </div>
+            <p class="reviews__text" hidden>Придете к нам снова?</p>
+            <input class="" type="radio" id="yes" name="question__back">
+            <label for="yes">Да</label>
+            <input type="radio" id="no" name="question__back">
+            <label for="no">Нет</label>
+        </form>
+    </section>
     </main>
     <footer class="footer container">
-        <p class="footer__text">Бахтина Марина ФО-41</p>
         <ul class="footer__list">
-            <li class="footer__item"><img class="footer__logo" src="images/logotip.avif" alt="логотип" width="100" height="90"></li>
+            <li class="footer__item"><img class="footer__logo" src="images/logotip.avif" alt="логотип" width="100"
+                    height="90"></li>
             <li class="footer__item"><a class="footer__link" href="#">Контакты и адрес</a></li>
-            <li class="footer__item"><p>(8362) 600-222</p></li>
-            <li class="footer__item"><p>fitnes.club@mail.ru</p></li> 
-            <li class="footer__item"><p>Лобачевского,10</p></li>
+            <li class="footer__item">
+                <p>(8362) 600-222</p>
+            </li>
+            <li class="footer__item">
+                <p>fitnes.club@mail.ru</p>
+            </li>
+            <li class="footer__item">
+                <p>Лобачевского,10</p>
+            </li>
         </ul>
         <ul class="footer__list">
-            <li class="footer__item"><a class="footer__link"  href="#">Соц. сети</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Соц. сети</a></li>
             <li class="footer__item"><img src="images/wattsap.png" alt="фотоватцап" width="50"></li>
             <li class="footer__item"><img src="images/telega.png" alt="фототелеграмм" width="50"></li>
             <li class="footer__item"><img src="images/vk-ts1623650785.png" alt="фотовк" width="50"></li>
         </ul>
         <ul class="footer__list">
-            <li class="footer__item"><a  class="footer__link"  href="#">Меню</a></li>
-            <li class="footer__item"><a  class="footer__link" href="#">О клубе</a></li>
-           </ul>
-
-           <ul class="footer__list">
-             <li class="footer__item"><a class="footer__link"  href="#">График работы</a></li>
-            <li class="footer__item"><p> Понедельник-пятница 9:00-20:00</p></li>
-            <li class="footer__item"><p>Суббота-воскресенье 8:00-20:00</p></li>
+            <li class="footer__item"><a class="footer__link" href="#">График работы</a></li>
+            <li class="footer__item">
+                <p> Понедельник-пятница 9:00-20:00</p>
+            </li>
+            <li class="footer__item">
+                <p>Суббота-воскресенье 8:00-20:00</p>
+            </li>
         </ul>
+        <p class="footer__copy">&copy; Бахтина Марина  ФО-41, Пехметов Дмитрий РК-42</p>
     </footer>
-    <div class="popup">
+
+    <div class="popup" hidden>
         <section class="login">
             <h2 class="login__title">Вход</h2>
-            <form  class="login__input" id ="input_form" action="#">
-                <input  class="login__input" type="text" name="login" placeholder="Логин">
-                <input  class="login__input" type="password" name="password" placeholder="Пароль">
-                <input  class="login__input" type="password" name="password" placeholder="Подтвердить вход">
-                <input  class="login__button" type="submit" value="Войти">
-             </form>
+            <button class="login__close" type="button"> X </button>
+            <form class="login__input" id="input_form" action="#"id="formApplication">
+                <input class="login__input" type="text" name="login" placeholder="Логин">
+                <input class="login__input" type="password" name="password" placeholder="Пароль">
+                <input class="login__input" type="password" name="password" placeholder="Подтвердить вход">
+                <input class="login__button" type="submit" value="Войти">
+            </form>
         </section>
+    </div>
+    <div class="popup-reg" hidden>
         <section class="register">
             <h2 class="register__title">Регистрация</h2>
-            <form class="register__form" action="#">
-                <input  class="register__input" type="text" name="username" placeholder="Введите ФИО">
-                <input class="register__input" type="number" name="number" placeholder="Дата рождения">
-                <input class="register__input" type="text" name=" " placeholder="Электронная почта">
-                <input class="register__input" type="tel" name="tel" placeholder="Контактный телефон">
+            <button class="register__close"> X</button>
+            <form class="register__form" action="#" id="formApplication">
+                <input class="register__input" type="username" id="username"
+                name="username" placeholder="Введите ФИО">
+                <input class="register__input" type="number" id="number" name="number" placeholder="Возраст">
+                <input class="register__input" type="email" id="email" 
+                name="email" placeholder="Электронная почта">
+                <input class="register__input" type="tel" id="tel" 
+                name="tel" placeholder="Контактный телефон">
                 <input class="register__button" type="submit" value="Зарегистрироваться">
             </form>
+            <p id="application-message" class="application__message"></p>
         </section>
-        <section  class="lesson">
-            <h2 class="lesson__title">Запись на пробное занятие</h2>
-            <form  class="lesson__form" action=" method" >
-                <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
-                <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
-                <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
-                <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас" >
-                <input class="lesson__button" type="lesson__submit" value="Отправить">
-            </form>
-        </section>
-
     </div>
-    <section class="reviews">
+    <section class="lesson" hidden>
+        <h2 class="lesson__title">Запись на пробное занятие</h2>
+        <button class="lesson__close"> X</button>
+        <form class="lesson__form" action=" method" >
+            <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
+            <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
+            <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
+            <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас">
+            <input class="lesson__button" type="lesson__submit" value="Отправить">
+        </form>
+    </section>
+
+    <section class="reviews" hidden>
         <h2 class="reviews__title">Форма заполнения отзыва</h2>
-        <form class="reviews__form" action="#" method="post"> 
+        <button class="reviews__close"> X</button>
+        <form class="reviews__form" action="#" method="post">
             <p class="reviews__text">Что вам понравилось?</p>
             <input type="text" name="#" placeholder="#">
             <p class="reviews__text">Оцените удобство и комофрт спортивного зала</p>
             <div class="rating-area">
-                <label for="five" title="Оценка «5»"></label>	
+                <label for="five" title="Оценка «5»"></label>
                 <input type="radio" id="five" name="rating" value="5">
-                <label for="four" title="Оценка «4»"></label>    
+                <label for="four" title="Оценка «4»"></label>
                 <input type="radio" id="four" name="rating" value="4">
-                <label for="three" title="Оценка «3»"></label>  
+                <label for="three" title="Оценка «3»"></label>
                 <input type="radio" id="three" name="rating" value="3">
-                <label for="two" title="Оценка «2»"></label>    
+                <label for="two" title="Оценка «2»"></label>
                 <input type="radio" id="two" name="rating" value="2">
                 <label for="one" title="Оценка «1»"></label>
                 <input type="radio" id="one" name="rating" value="1">
             </div>
-        
-             <p class="reviews__text"> Оцените работу тренеров </p>
+
+            <p class="reviews__text" hidden> Оцените работу тренеров </p>
             <div class="rating-area">
                 <input type="radio" id="five1" name="rating" value="5">
-                <label for="five1" title="Оценка «5»"></label>	
+                <label for="five1" title="Оценка «5»"></label>
                 <input type="radio" id="four1" name="rating" value="4">
-                <label for="four1" title="Оценка «4»"></label>    
+                <label for="four1" title="Оценка «4»"></label>
                 <input type="radio" id="three1" name="rating" value="3">
-                <label for="three1" title="Оценка «3»"></label>  
+                <label for="three1" title="Оценка «3»"></label>
                 <input type="radio" id="two1" name="rating" value="2">
-                <label for="two1" title="Оценка «2»"></label>    
+                <label for="two1" title="Оценка «2»"></label>
                 <input type="radio" id="one1" name="rating" value="1">
                 <label for="one1" title="Оценка «1»"></label>
             </div>
-            <p class="reviews__text">Придете к нам снова?</p>
-            <input  class="" type="radio" id="yes" name="question__back" >
+            <p class="reviews__text" hidden>Придете к нам снова?</p>
+            <input class="" type="radio" id="yes" name="question__back">
             <label for="yes">Да</label>
-            <input type="radio" id="no" name="question__back" >
+            <input type="radio" id="no" name="question__back">
             <label for="no">Нет</label>
-    </form>
+        </form>
     </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-

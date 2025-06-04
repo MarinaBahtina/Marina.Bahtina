@@ -17,32 +17,34 @@
 }
 
 .menu__link {
-    display:block;
+    display: block;
     padding: 5px 10px;
     margin: 5px;
-    background-color:  rgba(40, 50, 187, 0.651);
+    background-color: rgba(40, 50, 187, 0.651);
     color: rgb(255, 255, 255);
     text-decoration: none;
-    
-    
+
+
 
 }
-.menu__link:hover{
-    background-color:  rgba(42, 55, 238, 0.651); 
-    box-shadow: 0 8px 16px 0
-rgba(0,0,0,0.2);
+
+.menu__link:hover {
+    background-color: rgba(42, 55, 238, 0.651);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.menu__link:active{
+.menu__link:active {
     background-color: #2f2961;
     color: #ffffff
-  }
+}
+
 .header__logo-wrap {
-    text-decoration: none; 
+    text-decoration: none;
     color: rgba(7, 17, 104, 0.815);
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 10px;
 }
 
 .header__title {
@@ -52,11 +54,13 @@ rgba(0,0,0,0.2);
 .menu__item {
     font-style: oblique;
 }
-.header__buttons{
+
+.header__buttons {
     display: flex;
     gap: 10px;
 }
-.header__button{
+
+.header__button {
     padding: 5px 10px;
     font-size: 20px;
     background-color: rgba(35, 33, 172, 0.651);
@@ -64,13 +68,12 @@ rgba(0,0,0,0.2);
     border-radius: 20px;
 }
 
-.header__button:hover{
-    background-color:  rgba(42, 55, 238, 0.651); 
-    box-shadow: 0 8px 16px 0
-rgba(0,0,0,0.2);
+.header__button:hover {
+    background-color: rgba(42, 55, 238, 0.651);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-  .header__button:active{
+.header__button:active {
     background-color: #2f2961;
     color: #ffffff
-  }
+}

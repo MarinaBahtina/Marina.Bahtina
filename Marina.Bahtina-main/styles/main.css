@@ -1,178 +1,352 @@
-.about{
-    display: flex;
-    gap: 10px;
-   }
-   .about__wrap-right{
-    width: 500px;
-    flex-shrink: 0;
-    transition: transform 0.3s;
-    transition: box-shadow 0.3s;
-    transition: outline 0.3s;
-   }
-   .about__wrap-right:hover{
-      transform: scale(1.03);
+.about {
+  display: flex;
+  gap: 10px;
 }
-   .about{
-    background-color: rgba(95, 116, 238, 0.719);
-     color: rgb(255, 255, 255);
-     padding: 10px;
-    }
-    
-    .about__button{
-        display: block;
-        padding: 10px;
-        color: rgb(71, 167, 62);
-        background-color: rgb(255, 255, 255);
-        text-decoration: none;
-        margin-top: auto;
-        margin-right: auto;
-       }
-       .about__wrap-left{
-        display: flex;
-        flex-direction: column;
-       }
 
-       .trainers__cards{
-        width: 350px;
-        padding: 15px;
-        background-color: rgba(49, 50, 109, 0.74);
-        color: black;
-        font-style: oblique;
-        box-shadow: 1px 2px 20px 5px #d7d7d7;
-        transition: transform 0.3s;
-        transition: box-shadow 0.3s;
-        transition: outline 0.3s;
-       }
-          
-       .trainers__cards:hover{
-        transform: scale(1.07);
-        box-shadow: 0 8px 16px 0
-rgba(61, 55, 55, 0.2);
-       }  
-       .treiners__wrap{
-        margin: 0;
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 20px;
-        flex-wrap: wrap;
-        list-style-type: none;
-       }
+.about__wrap-right {
+  width: 500px;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  transition: box-shadow 0.3s;
+  transition: outline 0.3s;
+}
 
-       .trainers__name{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-       }
+.about__wrap-right:hover {
+  transform: scale(1.03);
+}
 
-       .trainers__job{
-        margin-top: 0;
-        margin-bottom: 15px;
-        font-size: 14px;
-        font-style: italic;
-       }
+.about {
+  background-color: rgba(95, 116, 238, 0.719);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
 
-       .trainers__desc{
-        margin-top: 0;
-        margin-bottom: 15px;
-       }
+.about__button {
+  display: block;
+  padding: 10px;
+  color: rgb(71, 167, 62);
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-top: auto;
+  margin-right: auto;
+}
 
-       .trainers__link{
-        display: block;
-        padding: 10px;
-        background-color: rgb(9, 122, 37);
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        text-align: center;
-       }
+.about__wrap-left {
+  display: flex;
+  flex-direction: column;
+}
 
-       .trainers__list {
-        margin: 0;
-        padding: 20px 0;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        list-style-type: none;
-       }
-       
-       .about__title {
-        color: rgb(11, 14, 63);
-        font-style: italic;
-       }
+.trainers__cards {
+  width: 350px;
+  padding: 15px;
+  background-color: rgba(49, 50, 109, 0.74);
+  color: black;
+  font-style: oblique;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+  transition: transform 0.3s;
+  transition: box-shadow 0.3s;
+  transition: outline 0.3s;
+}
 
-       .about__title__desc
-       {
-        color: rgb(255, 255, 255);
-        font-style: oblique;
-       }
-       .trainers__image{
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-       }
-       .main__button{
-        color:rgb(255, 255, 255);
-        font-style: initial;
-        border-radius: 20px;
-        background-color: rgba(49, 55, 109, 0.74); 
-       }
+.trainers__cards:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px 0 rgba(61, 55, 55, 0.2);
+}
 
-       .main__button, .rewivew__button{
-        padding: 5px 10px;
-        font-size: 20px;
-        background-color: rgba(21, 13, 129, 0.651);
-        color: rgb(255, 255, 255);
-        border-radius: 20px;
-        text-align:center;
-       }
-      .trainers__title{
-        text-align: center;
-      }    
-      .table__link{
-        text-decoration: none;
-        background-color: #bbb5b5;
-        border-radius: 10px;
-        color: #000;
-        padding: 5px 10px;
-      }
-      .table__link:hover{
-        text-decoration: underline;
-        box-shadow: 0 8px 16px 0
-rgba(0,0,0,0.2);
-      }
-      .table, .table__row, .table__col{
-        border: 1px solid #000;
-      }
-     
+.treiners__wrap {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
 
-      .rewivew__button:hover{
-        background-color:  rgba(42, 55, 238, 0.651); 
-        box-shadow: 0 8px 16px 0
-    rgba(0,0,0,0.2);
-      }
-      .rewivew__button:active{
-        background-color: #2f2961;
-        color: #ffffff
-          
-      }
-      .rewivew{
-        margin: 10px auto;
-      }
-      .main__button:hover{
-        background-color:  rgba(42, 55, 238, 0.651); 
-        box-shadow: 0 8px 16px 0
-    rgba(0,0,0,0.2);
-      }
-      .main__button:active{
-        background-color: #2f2961;
-        color: #ffffff
-      }
-      .about__image:hover{
-        background-color:  rgba(42, 55, 238, 0.651); 
-        box-shadow: 0 8px 16px 0
-    rgba(0,0,0,0.2);
-    transform: scale(1.07);
-      }
-      
+.trainers__name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.trainers__job {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.trainers__desc {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.trainers__link {
+  display: block;
+  padding: 10px;
+  background-color: rgb(9, 122, 37);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.trainers__text {
+  text-align: center;
+}
+
+.trainers__tex {
+  text-align: none;
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+}
+
+.about__title {
+  color: rgb(11, 14, 63);
+  font-style: italic;
+}
+
+.about__title__desc {
+  color: rgb(255, 255, 255);
+  font-style: oblique;
+}
+
+.trainers__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.main__button {
+  color: rgb(255, 255, 255);
+  font-style: initial;
+  border-radius: 20px;
+  background-color: rgba(49, 55, 109, 0.74);
+}
+
+.main__button,
+.rewivew__button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgba(21, 13, 129, 0.651);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.trainers__title {
+  text-align: center;
+}
+
+.table__link {
+  text-decoration: none;
+  background-color: #bbb5b5;
+  border-radius: 10px;
+  color: #000;
+  padding: 5px 10px;
+}
+
+.table__link:hover {
+  text-decoration: underline;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.table,
+.table__row,
+.table__col {
+  border: 1px solid #000;
+}
+
+
+.rewivew__button:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rewivew__button:active {
+  background-color: #2f2961;
+  color: #ffffff
+}
+
+.rewivew {
+  margin: 10px auto;
+}
+
+.main__button:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main__button:active {
+  background-color: #2f2961;
+  color: #ffffff
+}
+
+.about__image:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.07);
+}
+
+.uslugi__text {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #000000;
+}
+
+.uslugi__wrapper {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.uslugi__one {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.uslugi__vid {
+  width: 300px;
+  padding: 15px;
+  background-color: aliceblue;
+  color: #000;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+  transition: transform 0.3s;
+  transition: box-shadow 0.3s;
+  transition: outline 0.3s;
+
+}
+
+.uslugi__image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.uslugi__vid:hover {
+  background-color: rgba(22, 30, 143, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.07);
+}
+
+.uslugi__vid:active {
+  background-color: #2f2961;
+  color: #ffffff
+}
+
+.hidden {
+  display: none; /* Скрываем элементы с этим классом */
+}
+.zal__wrapper{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* Скрываем контент до загрузки */
+.content {
+  display: none;
+}
+
+.preloader {
+  padding-top: 25%; /* Отступ сверху */
+  background: #fefefb; /* задаем фон при загрузке */
+  transition: opacity 0.5s ease; /* Плавный переход для изменения прозрачности */
+  text-align: center;/* центрируем текст */
+}
+
+.loader span {
+display: inline-block;/* располагаем элементы в строку */
+width: 30px;/* Ширина кругов */
+height: 20px;/* Высота кругов */
+background-color: #cd26f7;/* Цвет кругов */
+margin: 35px5px;/* Отступы вокруг кругов */
+}
+.dot1 {
+  animation: bounce 1s ease-in-out infinite;/* анимация для первой точки */
+}
+
+.dot2{
+  animation: bounce 1s ease-in-out 0.33s infinite;/*анимация для второй точки с задержкой*/
+}
+
+.dot3 {
+  animation: bounce 1s ease-in-out 0.66s infinite;/* анимация для третьей точки с задержкой */
+}
+.dot4 {
+  animation: bounce 1s ease-in-out 0.78s infinite;/* анимация для третьей точки с задержкой */
+}
+.dot5 {
+  animation: bounce 1s ease-in-out 0.99s infinite;/* анимация для третьей точки с задержкой */
+}
+
+/* Анимация bounce: */
+@keyframes bounce {
+  0%,
+  75%,
+  100% {
+      transform: translateY(0);/* круги на месте */
+ }
+
+  25% {
+     transform: translateY(-30px);/* круги поднимаются */
+ }
+}
+.inventar__wrapper{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inventar__image{
+  margin: 0 auto;
+}
+
+.zal__title {
+  text-align: center;
+}
+
+.inventar__title {
+  text-align: center;
+}
+.zal__wrapper{
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.zal__wrap{
+  width: 300px;
+  padding: 15px;
+  background-color: rgba(49, 50, 109, 0.74);
+  color: black;
+  font-style: oblique;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+  transition: transform 0.3s;
+  transition: box-shadow 0.3s;
+  transition: outline 0.3s;
+}
