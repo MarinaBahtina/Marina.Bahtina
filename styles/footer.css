@@ -106,8 +106,7 @@
 
 }
 
-.popup,
-.popup-reg {
+.popup, .popup-reg, .lesson, .reviews {
   position: fixed;
   /* позицинорование фиксированное */
   top: 0;
@@ -209,4 +208,47 @@
   /* Внутренние отступы с каждой стороны 10px*/
   background-color: #7c77bd;
   /*фон кнопки*/
+}
+.footer__copy{
+  text-align:center
+}
+.lesson__close {
+  position: absolute; /* позиционируется абсолютно*/
+  top: 0; /* Элемент будет находиться на верхней границе родителя*/
+  right: 0; /* элемент будет прижат к правой стороне родителя */
+  padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
+  background-color: #7c77bd;
+}
+.reviews__close{
+  position: absolute; /* позиционируется абсолютно*/
+  top: 0; /* Элемент будет находиться на верхней границе родителя*/
+  right: 0; /* элемент будет прижат к правой стороне родителя */
+  padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
+  background-color: #7c77bd;
+}
+.lesson__wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 800px;
+  background-color: rgb(161, 169, 238);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+.reviews__wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 800px;
+  background-color: rgb(161, 169, 238);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
 }

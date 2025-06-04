@@ -214,6 +214,9 @@
   gap: 20px;
   flex-wrap: wrap;
   list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  
 }
 
 .uslugi__one {
@@ -234,6 +237,7 @@
   transition: transform 0.3s;
   transition: box-shadow 0.3s;
   transition: outline 0.3s;
+  
 
 }
 
@@ -257,12 +261,7 @@
 .hidden {
   display: none; /* Скрываем элементы с этим классом */
 }
-.zal__wrapper{
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+
 /* Скрываем контент до загрузки */
 .content {
   display: none;
@@ -329,4 +328,34 @@ margin: 35px5px;/* Отступы вокруг кругов */
 
 .inventar__title {
   text-align: center;
+}
+.zal__wrapper{
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.zal__wrap{
+  width: 300px;
+  padding: 15px;
+  background-color: rgba(49, 50, 109, 0.74);
+  color: black;
+  font-style: oblique;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+  transition: transform 0.3s;
+  transition: box-shadow 0.3s;
+  transition: outline 0.3s;
+  
+}
+.zal__wrap:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px 0 rgba(61, 55, 55, 0.2);
 }

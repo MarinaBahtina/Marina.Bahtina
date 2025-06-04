@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         modalApplication.setAttribute("hidden", true);
     });
 
+ 
 
     //Регистрация
     const headerButtonReg = document.querySelector(".header__register");
@@ -117,6 +118,9 @@ const modalMessage = modalApplicationReg.querySelector("#application-message");
             "Пилатес",
             "Кардиозона",
             "Персональный тренинг",
+            "Танцевальная аэробика",
+            "Кроссфит",
+            "Стретчинг"
 
         ];
         const titleTreners = trenerContainer.querySelectorAll(".uslugi__one");
@@ -251,7 +255,35 @@ const sliders = document.querySelector('.swiper');
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
         },
+      
+
         });
     }
 
 
+//Запись на пробное занятие
+const headerButtonEnter = document.querySelector(".main__zapis");
+const modalLessonApplication = document.querySelector(".lesson");
+if (headerButtonEnter && modalLessonApplication) {
+    headerButtonEnter.addEventListener("click", () => {
+        modalLessonApplication.removeAttribute("hidden");
+    });
+}
+const closeModalButton = document.querySelector(".lesson .lesson__close");
+closeModalButton.addEventListener("click", () => {
+    modalLessonApplication.setAttribute("hidden", true);
+});
+
+//Оставить отзыв
+const headerReviewBtn = document.querySelector(".rewivew .rewivew__otzuv");
+const modalReview = document.querySelector(".reviews");
+
+if (headerReviewBtn && modalReview) {
+    headerReviewBtn.addEventListener("click", () => {
+        modalReview.removeAttribute("hidden");
+    });
+}
+const closeReview = document.querySelector(".reviews .reviews__close");
+closeReview.addEventListener("click", () => {
+    modalReview.setAttribute("hidden", true);
+});
