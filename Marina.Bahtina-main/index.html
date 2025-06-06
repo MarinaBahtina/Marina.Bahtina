@@ -67,19 +67,20 @@
                 <img class="about__image" src="images/oclube.jpg" alt="фотография о клубе" width="300">
             </div>
         </section>
-        <section class="lesson" hidden>
-            <h2 class="lesson__title">Запись на пробное занятие</h2>
-            <button class="lesson__close"> X</button>
-            <form class="lesson__form" action=" method" >
-                <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
-                <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
-                <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
-                <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас">
-                <input class="lesson__button" type="lesson__submit" value="Отправить">
-            </form>
-        </section>
-        
 
+        <section class="lesson" hidden>
+            <div class="lesson__wrapper">
+                <h2 class="lesson__title">Запись на пробное занятие</h2>
+                <button class="lesson__close">X</button>
+                <form class="lesson__form" action=" method" >
+                    <input class="lesson__input" type="text" name="username" placeholder="Введите ФИО">
+                    <input class="lesson__input" type="lesson__tel" name="tel" placeholder="Контактный телефон">
+                    <input class="lesson__input" type="lesson__number" name="number" placeholder="Возраст">
+                    <input class="lesson__input" type="lesson__text" name="time" placeholder="Удобное время для вас">
+                    <input class="lesson__button" type="lesson__submit" value="Отправить">
+                </form>
+            </div>
+        </section>
         <section class="trainers" id="trener">
             <h2 class="trainers__title"> Тренеры</h2>
             <p class="trainers__text">Наши тренеры имеют большой опыт работы в области фитнеса и спорта, постоянно
@@ -167,7 +168,7 @@
                 <img class="inventar__image" src="images/ganteli.webp" alt="" width="300">
                 <div class="inventar__wrap">
                 <p class="inventar__vid">Пояс кроссфит</p>
-                <img class="inventar__image" src="images/pouaz crossfit.webp" alt="" width="300">
+                <img class="inventar__image" src="images/pouaz crossfitT.webp" alt="" width="300">
                 <p class="inventar__vid">Коврик для йоги</p>
                 <img class="inventar__image" src="images/covrik.jpg" alt="" width="300">
             </div>-->
@@ -182,28 +183,31 @@
                   <div class="swiper-slide">
                     <img class="inventar__image" src="images/ganteli.webp" alt="" width="300"></div>
                     <div class="swiper-slide">
-                    <img class="inventar__image" src="images/pouaz crossfit.webp" alt="" width="300"></div>
+                    <img class="inventar__image" src="images/pouaz crossfitT.webp" alt="" width="300"></div>
                     <div class="swiper-slide">
                     <img class="inventar__image" src="images/covrik.jpg" alt="" width="300"></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
               </div>
-</section>
+        </section>
         <section class="uslugi" id="uslugi">
             <p class="uslugi__text">Фитнес-услуги</p>
             <div class="uslugi__buttons">
-                <button class="uslugi__btn" data-filter="all" type="button">все</button>
+                <button class="uslugi__btn" data-filter="all" type="button">ВСЕ</button>
                     <button class="uslugi__btn" data-filter="pilates"type="button">Пилатес</button>
                     <button class="uslugi__btn" data-filter="saycle"type="button">Сайкл</button>
                     <button class="uslugi__btn" data-filter="cardio"type="button">Кардио</button>
-                    
+                    <button class="uslugi__btn" data-filter="person"type="button">Персон</button>
+                    <button class="uslugi__btn" data-filter="arobika"type="button">Аэроб</button>
+                    <button class="uslugi__btn" data-filter="crossfit"type="button">Кроссфит</button>
+                    <button class="uslugi__btn" data-filter="streshink"type="button">Стретчинг</button>
             </div>
             <div class="uslugi__wrapper">
                 <div class="uslugi__vid saycle">
                     <img class="uslugi__image" src="images/SAUKLTREN.jpg" alt="фото с тренировки" width="300">
                     <p class="uslugi__one"> Тренировка 1</p>
-                    <p class="uslugi__tex"> Кардио тренировка высокой интенсивности на специальных велотренажерах </p>
+                    <p class="uslugi__tex"> Кардио тренировка высокой интенсивности на специальных велотренажерах.Она подразумевает выполнение упражнений, которые повышают частоту сердечных сокращений и дыхания, задействуя мышцы в основном в динамическом режиме. </p>
                 </div>
 
                 <div class="uslugi__vid pilates">
@@ -220,57 +224,33 @@
                         другие кардиотренажеры. Мы также предоставляем возможность заниматься под руководством опытных
                         тренеров, которые помогут достигнуть ваших целей.</p>
                 </div>
-                <div class="uslugi__vid">
+                <div class="uslugi__vid person">
                     <img class="uslugi__image" src="images/PERSONTREN.webp" alt="фото с тренировки" width="300">
                     <p class="uslugi__one"> Тренировка 4</p>
                     <p class="uslugi__tex">В процессе тренировок очень важно соблюдать правильную технику выполнения
                         упражнений. Помочь вам в этом может только опытный специалист, поэтому никогда не пренебрегайте
                         помощью инструктора. </p>
                 </div>
+                <div class="uslugi__vid arobika">
+                    <img class="uslugi__image" src="images/arobika.jpg" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Тренировка 5</p>
+                    <p class="uslugi__tex">Целью подобных тренировок является укрепление мышечных групп всего тела, похудение и снятие стресса. В занятиях используют различные стили, такие как хип-хоп, фанк, восточные и многие другие. </p>
+                </div>
+                <div class="uslugi__vid crossfit">
+                    <img class="uslugi__image" src="images/crosshitt.webp" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Тренировка 6</p>
+                    <p class="uslugi__tex">Тренировки по кроссфиту представляют собой интенсивные интервальные техники, включающие элементы тяжелой атлетики, гимнастики, бега, гиревого спорта, пауэрлифтинга, гребли и прочие. </p>
+                </div>
+                <div class="uslugi__vid streshink">
+                    <img class="uslugi__image" src="images/strech.png" alt="фото с тренировки" width="300">
+                    <p class="uslugi__one"> Тренировка 7</p>
+                    <p class="uslugi__tex">Программа стретчинга предполагает классическую растяжку сухожилий и мышц. Система упражнений повышает гибкость позвоночника и эластичность связок, а также позволяет даже в зрелом возрасте улучшить двигательную активность.  </p>
+                </div>
         </section>
         <section class="rewivew" id="otzuv">
             <button class="rewivew__button rewivew__otzuv ">Оставить отзыв</button>
         </section>
-  <section class="reviews" hidden>
-        <h2 class="reviews__title">Форма заполнения отзыва</h2>
-        <button class="reviews__close"> X</button>
-        <form class="reviews__form" action="#" method="post">
-            <p class="reviews__text">Что вам понравилось?</p>
-            <input type="text" name="#" placeholder="#">
-            <p class="reviews__text">Оцените удобство и комофрт спортивного зала</p>
-            <div class="rating-area">
-                <label for="five" title="Оценка «5»"></label>
-                <input type="radio" id="five" name="rating" value="5">
-                <label for="four" title="Оценка «4»"></label>
-                <input type="radio" id="four" name="rating" value="4">
-                <label for="three" title="Оценка «3»"></label>
-                <input type="radio" id="three" name="rating" value="3">
-                <label for="two" title="Оценка «2»"></label>
-                <input type="radio" id="two" name="rating" value="2">
-                <label for="one" title="Оценка «1»"></label>
-                <input type="radio" id="one" name="rating" value="1">
-            </div>
-
-            <p class="reviews__text" hidden> Оцените работу тренеров </p>
-            <div class="rating-area">
-                <input type="radio" id="five1" name="rating" value="5">
-                <label for="five1" title="Оценка «5»"></label>
-                <input type="radio" id="four1" name="rating" value="4">
-                <label for="four1" title="Оценка «4»"></label>
-                <input type="radio" id="three1" name="rating" value="3">
-                <label for="three1" title="Оценка «3»"></label>
-                <input type="radio" id="two1" name="rating" value="2">
-                <label for="two1" title="Оценка «2»"></label>
-                <input type="radio" id="one1" name="rating" value="1">
-                <label for="one1" title="Оценка «1»"></label>
-            </div>
-            <p class="reviews__text" hidden>Придете к нам снова?</p>
-            <input class="" type="radio" id="yes" name="question__back">
-            <label for="yes">Да</label>
-            <input type="radio" id="no" name="question__back">
-            <label for="no">Нет</label>
-        </form>
-    </section>
+    
     </main>
     <footer class="footer container">
         <ul class="footer__list">
@@ -347,44 +327,46 @@
     </section>
 
     <section class="reviews" hidden>
-        <h2 class="reviews__title">Форма заполнения отзыва</h2>
-        <button class="reviews__close"> X</button>
-        <form class="reviews__form" action="#" method="post">
-            <p class="reviews__text">Что вам понравилось?</p>
-            <input type="text" name="#" placeholder="#">
-            <p class="reviews__text">Оцените удобство и комофрт спортивного зала</p>
-            <div class="rating-area">
-                <label for="five" title="Оценка «5»"></label>
-                <input type="radio" id="five" name="rating" value="5">
-                <label for="four" title="Оценка «4»"></label>
-                <input type="radio" id="four" name="rating" value="4">
-                <label for="three" title="Оценка «3»"></label>
-                <input type="radio" id="three" name="rating" value="3">
-                <label for="two" title="Оценка «2»"></label>
-                <input type="radio" id="two" name="rating" value="2">
-                <label for="one" title="Оценка «1»"></label>
-                <input type="radio" id="one" name="rating" value="1">
-            </div>
-
-            <p class="reviews__text" hidden> Оцените работу тренеров </p>
-            <div class="rating-area">
-                <input type="radio" id="five1" name="rating" value="5">
-                <label for="five1" title="Оценка «5»"></label>
-                <input type="radio" id="four1" name="rating" value="4">
-                <label for="four1" title="Оценка «4»"></label>
-                <input type="radio" id="three1" name="rating" value="3">
-                <label for="three1" title="Оценка «3»"></label>
-                <input type="radio" id="two1" name="rating" value="2">
-                <label for="two1" title="Оценка «2»"></label>
-                <input type="radio" id="one1" name="rating" value="1">
-                <label for="one1" title="Оценка «1»"></label>
-            </div>
-            <p class="reviews__text" hidden>Придете к нам снова?</p>
-            <input class="" type="radio" id="yes" name="question__back">
-            <label for="yes">Да</label>
-            <input type="radio" id="no" name="question__back">
-            <label for="no">Нет</label>
-        </form>
+        <div class="reviews__wrapper">
+            <h2 class="reviews__title">Форма заполнения отзыва</h2>
+            <button class="reviews__close"> X</button>
+            <form class="reviews__form" action="#" method="post">
+                <p class="reviews__text">Что вам понравилось?</p>
+                <input type="text" name="#" placeholder="#">
+                <p class="reviews__text">Оцените удобство и комфорт спортивного зала</p>
+                <div class="rating-area">
+                    <label for="five" title="Оценка «5»"></label>
+                    <input type="radio" id="five" name="rating" value="5">
+                    <label for="four" title="Оценка «4»"></label>
+                    <input type="radio" id="four" name="rating" value="4">
+                    <label for="three" title="Оценка «3»"></label>
+                    <input type="radio" id="three" name="rating" value="3">
+                    <label for="two" title="Оценка «2»"></label>
+                    <input type="radio" id="two" name="rating" value="2">
+                    <label for="one" title="Оценка «1»"></label>
+                    <input type="radio" id="one" name="rating" value="1">
+                </div>
+                <p class="reviews__text" > Оцените работу тренеров </p>
+                <div class="rating-area">
+                    <input type="radio" id="five1" name="rating" value="5">
+                    <label for="five1" title="Оценка «5»"></label>
+                    <input type="radio" id="four1" name="rating" value="4">
+                    <label for="four1" title="Оценка «4»"></label>
+                    <input type="radio" id="three1" name="rating" value="3">
+                    <label for="three1" title="Оценка «3»"></label>
+                    <input type="radio" id="two1" name="rating" value="2">
+                    <label for="two1" title="Оценка «2»"></label>
+                    <input type="radio" id="one1" name="rating" value="1">
+                    <label for="one1" title="Оценка «1»"></label>
+                </div>
+                <p class="reviews__text" >Придете к нам снова?</p>
+                <input class="" type="radio" id="yes" name="question__back">
+                <label for="yes">Да</label>
+                <input type="radio" id="no" name="question__back">
+                <label for="no">Нет</label>
+                <input class="reviews__button"  value="Отправить">
+            </form>
+        </div>
     </section>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

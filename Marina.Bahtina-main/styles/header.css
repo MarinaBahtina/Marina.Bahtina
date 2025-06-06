@@ -14,6 +14,7 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    margin-left: auto;
 }
 
 .menu__link {
@@ -22,10 +23,7 @@
     margin: 5px;
     background-color: rgba(40, 50, 187, 0.651);
     color: rgb(255, 255, 255);
-    text-decoration: none;
-
-
-
+    text-decoration: none; 
 }
 
 .menu__link:hover {
@@ -53,11 +51,15 @@
 
 .menu__item {
     font-style: oblique;
+    
+
 }
 
 .header__buttons {
     display: flex;
     gap: 10px;
+    margin-left: auto;
+   
 }
 
 .header__button {

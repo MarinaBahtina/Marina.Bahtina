@@ -106,8 +106,7 @@
 
 }
 
-.popup,
-.popup-reg {
+.popup, .popup-reg, .lesson, .reviews {
   position: fixed;
   /* позицинорование фиксированное */
   top: 0;
@@ -218,12 +217,60 @@
   top: 0; /* Элемент будет находиться на верхней границе родителя*/
   right: 0; /* элемент будет прижат к правой стороне родителя */
   padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
-  background-color: #fdec00; /*фон кнопки*/
+  background-color: #7c77bd;
 }
 .reviews__close{
   position: absolute; /* позиционируется абсолютно*/
   top: 0; /* Элемент будет находиться на верхней границе родителя*/
   right: 0; /* элемент будет прижат к правой стороне родителя */
   padding: 10px; /* Внутренние отступы с каждой стороны 10px*/
-  background-color: #fdec00; /*фон кнопки*/
+  background-color: #7c77bd;
+}
+.lesson__wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 800px;
+  background-color: rgb(161, 169, 238);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+.reviews__wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 800px;
+  background-color: rgb(161, 169, 238);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+.reviews__button{
+  display: flex;
+  margin: 0 auto;
+}
+.reviews__button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: rgba(21, 13, 129, 0.651);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.reviews__button:hover {
+  background-color: rgba(42, 55, 238, 0.651);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.reviews__button:active {
+  background-color: #2f2961;
+  color: #ffffff
 }

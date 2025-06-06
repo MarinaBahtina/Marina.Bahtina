@@ -118,6 +118,9 @@ const modalMessage = modalApplicationReg.querySelector("#application-message");
             "Пилатес",
             "Кардиозона",
             "Персональный тренинг",
+            "Танцевальная аэробика",
+            "Кроссфит",
+            "Стретчинг"
 
         ];
         const titleTreners = trenerContainer.querySelectorAll(".uslugi__one");
@@ -256,45 +259,31 @@ const sliders = document.querySelector('.swiper');
 
         });
     }
-   //Запись на пробное занятие
-    const headerButtonEnter = document.querySelector(".main__zapis");
-    const modalApplication = document.querySelector(".lesson");
-    if (headerButtonEnter && modalApplication) {
-        headerButtonEnter.addEventListener("click", () => {
-            console.log('Запись на пробное занятие');
-            modalApplication.removeAttribute("hidden");
-        });
-    }
-        window.addEventListener("click", (event) => {
-            if (event.target === modalApplication) {
-                modalApplication.setAttribute("hidden", true);
-            }
-        });
 
 
-    const closeModalButton = document.querySelector(".lesson__close");
-    closeModalButton.addEventListener("click", () => {
-        modalApplication.setAttribute("hidden", true);
-   
+//Запись на пробное занятие
+const headerButtonEnter = document.querySelector(".main__zapis");
+const modalLessonApplication = document.querySelector(".lesson");
+if (headerButtonEnter && modalLessonApplication) {
+    headerButtonEnter.addEventListener("click", () => {
+        modalLessonApplication.removeAttribute("hidden");
+    });
+}
+const closeModalButton = document.querySelector(".lesson .lesson__close");
+closeModalButton.addEventListener("click", () => {
+    modalLessonApplication.setAttribute("hidden", true);
+});
 
- //Форма заполнения отзыва
- const headerButtonEnter = document.querySelector(".rewivew__otzuv");
- const modalApplication = document.querySelector(".reviews");
- if (headerButtonEnter && modalApplication) {
-     headerButtonEnter.addEventListener("click", () => {
-         console.log('Форма заполнения отзыва');
-         modalApplication.removeAttribute("hidden");
-     });
- }
-     window.addEventListener("click", (event) => {
-         if (event.target === modalApplication) {
-             modalApplication.setAttribute("hidden", true);
-         }
-     });
+//Оставить отзыв
+const headerReviewBtn = document.querySelector(".rewivew .rewivew__otzuv");
+const modalReview = document.querySelector(".reviews");
 
-
- const closeModalButton = document.querySelector(".reviews__close");
- closeModalButton.addEventListener("click", () => {
-     modalApplication.setAttribute("hidden", true);
- });
- });
+if (headerReviewBtn && modalReview) {
+    headerReviewBtn.addEventListener("click", () => {
+        modalReview.removeAttribute("hidden");
+    });
+}
+const closeReview = document.querySelector(".reviews .reviews__close");
+closeReview.addEventListener("click", () => {
+    modalReview.setAttribute("hidden", true);
+});
